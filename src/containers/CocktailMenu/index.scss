@@ -1,0 +1,81 @@
+.social-circle {
+  position: absolute;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+
+  display: grid;
+  grid-template-columns: 50% 50%;
+
+  .cocktail {
+    --card-padding: 1rem;
+    height: calc(20vh - 2 * var(--card-padding));
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: var(--card-padding);
+
+    .recipe {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+
+      .title-block {
+        position: relative;
+        font-size: 1.5rem;
+        font-weight: bold;
+
+        .title {
+          position: relative;
+          z-index: 1;
+        }
+
+        .underline {
+          content: "";
+          position: absolute;
+          z-index: 0;
+          bottom: 0.1rem;
+          left: 0;
+          width: 50%;
+          border-style: solid;
+          border-width: 1px;
+          border-color: #85e8c2;
+        }
+      }
+
+      .ingredient {
+        display: flex;
+        flex-direction: row;
+
+        .name {
+          margin-right: auto;
+
+          .modifier {
+            opacity: 0.5;
+          }
+        }
+
+        .amount {
+          margin-right: 0.2ch;
+        }
+
+        .unit {
+          opacity: 0.5;
+        }
+      }
+    }
+
+    .image {
+      flex-grow: 0;
+      flex-shrink: 0;
+      height: 100%;
+      aspect-ratio: 3 / 4;
+      background-repeat: no-repeat;
+      background-position-x: var(--offsetX, 0px);
+      background-position-y: var(--offsetY, 0px);
+      background-size: var(--size, cover);
+      margin-left: var(--card-padding);
+      border-radius: 0.3rem;
+    }
+  }
+}
