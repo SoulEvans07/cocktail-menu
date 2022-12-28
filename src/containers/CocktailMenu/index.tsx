@@ -246,7 +246,7 @@ const drinks: Cocktail[] = [
 
 type Spirit = 'gin' | 'rum' | 'whisky' | 'vodka' | 'tequila';
 type SpiritColorMap = {
-  [spirit in Spirit]: string;
+  [spirit in Spirit | 'other']: string;
 };
 const colorMap: SpiritColorMap = {
   rum: '#08c3f7',
@@ -254,6 +254,7 @@ const colorMap: SpiritColorMap = {
   whisky: '#d10b0a',
   vodka: '#ffd457',
   tequila: '#ac82ed',
+  other: '#efefef',
 };
 
 const hasIngredient = (ingredients: Ingredient[], search: string): boolean => {
@@ -302,7 +303,7 @@ export default function CocktailMenu(): ReactElement {
 
     const spirit = getSpirit(drink);
     const borderStyle = {
-      borderColor: colorMap[spirit!],
+      borderColor: colorMap[spirit || 'other'],
     };
 
     return (
