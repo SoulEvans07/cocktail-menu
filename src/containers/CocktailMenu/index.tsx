@@ -16,6 +16,7 @@ interface Cocktail {
   offY?: number;
   zoom?: number;
   recipe: Ingredient[];
+  disabled?: boolean;
 }
 
 const drinks: Cocktail[] = [
@@ -105,6 +106,15 @@ const drinks: Cocktail[] = [
     offX: -110,
   },
   {
+    name: 'Piña colada',
+    recipe: [
+      { name: 'White rum', amount: 60, unit: 'ml' },
+      { name: 'Pinapple juice', amount: 60, unit: 'ml' },
+      { name: 'Creme of Coconut', amount: 30, unit: 'ml' },
+    ],
+    imgUrl: '/img/pina-colada.jpg',
+  },
+  {
     name: 'Blue Lagoon',
     recipe: [
       { name: 'Vodka', amount: 50, unit: 'ml' },
@@ -127,6 +137,16 @@ const drinks: Cocktail[] = [
     imgUrl: '/img/trinidad-sour.jpg',
   },
   {
+    name: 'Negroni',
+    recipe: [
+      { name: 'Campari', amount: 30, unit: 'ml' },
+      { name: 'Gin', amount: 30, unit: 'ml' },
+      { name: 'Red vermouth', amount: 30, unit: 'ml' },
+      { name: 'Orange twist', amount: 3, unit: 'piece', gar: true },
+    ],
+    imgUrl: '/img/negroni.jpg',
+  },
+  {
     name: 'Mai Tai',
     recipe: [
       { name: 'Dark rum', amount: 60, unit: 'ml' },
@@ -137,16 +157,28 @@ const drinks: Cocktail[] = [
       { name: 'Mint', amount: 2, unit: 'leaf', gar: true },
     ],
     imgUrl: '/img/mai-tai.jpg',
+    disabled: true,
   },
   {
     name: 'Tequila Sunrise',
     recipe: [
-      { name: 'Grenadine', amount: 15, unit: 'ml' },
       { name: 'Tequila', amount: 60, unit: 'ml' },
+      { name: 'Grenadine', amount: 15, unit: 'ml' },
       { name: 'Orange juice', amount: 120, unit: 'ml' },
     ],
     imgUrl: '/img/tequila-sunrise.jpg',
     offX: -25,
+  },
+  {
+    name: 'Margarita',
+    recipe: [
+      { name: 'Tequila', amount: 60, unit: 'ml' },
+      { name: 'Lime juice', amount: 30, unit: 'ml' },
+      { name: 'Triple Sec', amount: 30, unit: 'ml' },
+      { name: 'Salt', amount: 0.5, unit: 'glass rim', gar: true },
+    ],
+    imgUrl: '/img/margarita.jpg',
+    offX: -20,
   },
   {
     name: 'Ivy Gimlet',
@@ -160,6 +192,7 @@ const drinks: Cocktail[] = [
     offX: -30,
     offY: -65,
     zoom: 125,
+    disabled: true,
   },
   {
     name: "The Bee's Knees",
@@ -172,6 +205,7 @@ const drinks: Cocktail[] = [
     zoom: 150,
     offX: -20,
     offY: -70,
+    disabled: true,
   },
   {
     name: 'White Lady',
@@ -221,14 +255,26 @@ const drinks: Cocktail[] = [
     offX: -20,
   },
   {
-    name: "Dune's Spice Beer",
+    name: 'Manhattan',
     recipe: [
-      { name: 'The Spice syrup', amount: 30, unit: 'ml' },
-      { name: 'Soda', amount: 90, unit: 'ml' },
-      { name: 'Rye whisky', amount: 30, unit: 'ml', opt: true },
+      { name: 'Rye whisky', amount: 60, unit: 'ml' },
+      { name: 'Red vermouth', amount: 30, unit: 'ml' },
+      { name: 'Angostura bitters', amount: 2, unit: 'dash' },
     ],
-    imgUrl: '/img/dune-spice-beer.jpg',
-    offX: -120,
+    imgUrl: '/img/manhattan.jpg',
+    offX: 0,
+    offY: -20,
+  },
+  {
+    name: 'Martini',
+    recipe: [
+      { name: 'Gin', amount: 60, unit: 'ml' },
+      { name: 'Dry vermouth', amount: 30, unit: 'ml' },
+      { name: 'Orange bitters', amount: 2, unit: 'dash' },
+    ],
+    imgUrl: '/img/martini.jpg',
+    offX: -40,
+    offY: 0,
   },
   {
     name: "Dune's Spice Coffee",
@@ -241,8 +287,9 @@ const drinks: Cocktail[] = [
     ],
     imgUrl: '/img/dune-spice-coffee.png',
     offX: -130,
+    disabled: true,
   },
-];
+].filter(drink => !drink.disabled);
 
 type Spirit = 'gin' | 'rum' | 'whisky' | 'vodka' | 'tequila';
 type SpiritColorMap = {
@@ -320,5 +367,5 @@ export default function CocktailMenu(): ReactElement {
     );
   };
 
-  return <div className="social-circle">{drinks.map(renderCocktail)}</div>;
+  return <div className="cocktail-menu">{drinks.map(renderCocktail)}</div>;
 }
