@@ -113,6 +113,7 @@ const drinks: Cocktail[] = [
       { name: 'Creme of Coconut', amount: 30, unit: 'ml' },
     ],
     imgUrl: '/img/pina-colada.jpg',
+    disabled: true,
   },
   {
     name: 'Blue Lagoon',
@@ -135,6 +136,24 @@ const drinks: Cocktail[] = [
       { name: 'Mint', amount: 3, unit: 'leaf', gar: true },
     ],
     imgUrl: '/img/trinidad-sour.jpg',
+    disabled: true,
+  },
+  {
+    name: 'Godfather',
+    recipe: [
+      { name: 'Whisky', amount: 60, unit: 'ml' },
+      { name: 'Amaretto (almond liqueur)', amount: 30, unit: 'ml' },
+    ],
+    imgUrl: '/img/godfather.jpg',
+  },
+  {
+    name: 'Godmother',
+    recipe: [
+      { name: 'Vodka', amount: 45, unit: 'ml' },
+      { name: 'Amaretto (almond liqueur)', amount: 45, unit: 'ml' },
+    ],
+    imgUrl: '/img/godmother.jpg',
+    offX: -35,
   },
   {
     name: 'Negroni',
@@ -168,6 +187,7 @@ const drinks: Cocktail[] = [
     ],
     imgUrl: '/img/tequila-sunrise.jpg',
     offX: -25,
+    disabled: true,
   },
   {
     name: 'Margarita',
@@ -192,7 +212,6 @@ const drinks: Cocktail[] = [
     offX: -30,
     offY: -65,
     zoom: 125,
-    disabled: true,
   },
   {
     name: "The Bee's Knees",
@@ -275,6 +294,7 @@ const drinks: Cocktail[] = [
     imgUrl: '/img/martini.jpg',
     offX: -40,
     offY: 0,
+    disabled: true,
   },
   {
     name: "Dune's Spice Coffee",
@@ -289,18 +309,55 @@ const drinks: Cocktail[] = [
     offX: -130,
     disabled: true,
   },
+  {
+    name: 'Between the Sheets',
+    recipe: [
+      { name: 'Brandy', amount: 20, unit: 'ml' },
+      { name: 'White Rum', amount: 20, unit: 'ml' },
+      { name: 'Triple Sec', amount: 20, unit: 'ml' },
+      { name: 'Lemon juice', amount: 10, unit: 'ml' },
+      { name: 'Lemon twist', amount: 1, unit: 'piece', gar: true },
+    ],
+    imgUrl: '/img/between-the-sheets.jpg',
+    offX: -10,
+  },
+  {
+    name: 'Sidecar',
+    recipe: [
+      { name: 'Brandy', amount: 50, unit: 'ml' },
+      { name: 'Cointreau', amount: 30, unit: 'ml' },
+      { name: 'Lemon juice', amount: 15, unit: 'ml' },
+      { name: 'Sugar rim', amount: 1, unit: 'piece', gar: true },
+      { name: 'Lemon twist', amount: 1, unit: 'piece', gar: true },
+    ],
+    imgUrl: '/img/sidecar.jpg',
+    offX: -10,
+  },
+  {
+    name: 'Roasted Toasted Almond',
+    recipe: [
+      { name: 'Vodka', amount: 30, unit: 'ml', opt: true },
+      { name: 'Amaretto (almond liqueur)', amount: 30, unit: 'ml' },
+      { name: 'Coffee liqueur', amount: 30, unit: 'ml' },
+      { name: 'Heavy cream', amount: 10, unit: 'ml' },
+    ],
+    imgUrl: '/img/roasted-toasted-almond.jpg',
+    offX: -90,
+  },
 ].filter(drink => !drink.disabled);
 
-type Spirit = 'gin' | 'rum' | 'whisky' | 'vodka' | 'tequila';
+type Spirit = 'gin' | 'rum' | 'whisky' | 'vodka' | 'tequila' | 'brandy' | 'cognac';
 type SpiritColorMap = {
   [spirit in Spirit | 'other']: string;
 };
 const colorMap: SpiritColorMap = {
+  whisky: '#d10b0a',
+  brandy: '#ffa808',
+  cognac: '#ffa808',
   rum: '#08c3f7',
   gin: '#85e8c2',
-  whisky: '#d10b0a',
-  vodka: '#ffd457',
   tequila: '#ac82ed',
+  vodka: '#ffd457',
   other: '#efefef',
 };
 
