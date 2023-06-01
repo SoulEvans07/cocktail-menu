@@ -1,16 +1,22 @@
 .cocktail-menu {
-  position: absolute;
-  inset: 0;
-  width: 100vw;
-  height: 100vh;
-  overflow-x: hidden;
+  margin: 0 auto;
+  max-width: 1200px;
+  // width: 100vw;
+  // height: 100vh;
+  // overflow-x: hidden;
 
   display: grid;
   grid-template-columns: 50% 50%;
+  border-radius: 10px;
+  box-shadow: rgba(149, 157, 165, 0.3) 0px 8px 24px;
+
+  @media (max-width: 780px) {
+    grid-template-columns: 100%;
+  }
 
   .cocktail {
     --card-padding: 1rem;
-    height: calc(20vh - 2 * var(--card-padding));
+    height: 150px; //calc(20vh - 2 * var(--card-padding) - 1 * var(--page-padding));
     display: flex;
     flex-direction: row;
     justify-content: space-between;

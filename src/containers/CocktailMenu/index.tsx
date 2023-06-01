@@ -316,7 +316,6 @@ const drinks: Cocktail[] = [
       { name: 'White Rum', amount: 20, unit: 'ml' },
       { name: 'Triple Sec', amount: 20, unit: 'ml' },
       { name: 'Lemon juice', amount: 10, unit: 'ml' },
-      { name: 'Lemon twist', amount: 1, unit: 'piece', gar: true },
     ],
     imgUrl: '/img/between-the-sheets.jpg',
     offX: -10,
@@ -334,7 +333,7 @@ const drinks: Cocktail[] = [
     offX: -10,
   },
   {
-    name: 'Roasted Toasted Almond',
+    name: 'Toasted Almond',
     recipe: [
       { name: 'Vodka', amount: 30, unit: 'ml', opt: true },
       { name: 'Amaretto (almond liqueur)', amount: 30, unit: 'ml' },
