@@ -343,6 +343,28 @@ const drinks: Cocktail[] = [
     imgUrl: '/img/roasted-toasted-almond.jpg',
     offX: -90,
   },
+  {
+    name: 'Vodka Paloma',
+    recipe: [
+      { name: 'Vodka', amount: 45, unit: 'ml' },
+      { name: 'Grapefruit juice', amount: 100, unit: 'ml' },
+      { name: 'Lime juice', amount: 20, unit: 'ml' },
+      { name: 'Sugar syrup', amount: 20, unit: 'ml' },
+      { name: 'Soda', amount: 100, unit: 'ml' },
+    ],
+    imgUrl: '/img/paloma.jpg',
+    offX: -20,
+  },
+  {
+    name: 'Blue Kamikaze (shot)',
+    recipe: [
+      { name: 'Vodka', amount: 50, unit: 'ml' },
+      { name: 'Blue curacao', amount: 50, unit: 'ml' },
+      { name: 'Lime juice', amount: 50, unit: 'ml' },
+    ],
+    imgUrl: '/img/blue-kamikaze.jpg',
+    offX: -90,
+  },
 ].filter(drink => !drink.disabled);
 
 type Spirit = 'gin' | 'rum' | 'whisky' | 'vodka' | 'tequila' | 'brandy' | 'cognac';
