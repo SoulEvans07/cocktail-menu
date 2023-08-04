@@ -31,14 +31,35 @@ const drinks: Cocktail[] = [
     imgUrl: '/img/old-fashioned.jpg',
   },
   {
-    name: 'Daiquiri',
+    name: 'B&B',
     recipe: [
-      { name: 'White rum', amount: 60, unit: 'ml' },
-      { name: 'Lemon juice', amount: 30, unit: 'ml' },
-      { name: 'Sugar syrup', amount: 20, unit: 'ml' },
+      { name: 'Brandy', amount: 50, unit: 'ml' },
+      { name: 'Benedictine', amount: 50, unit: 'ml' },
     ],
-    imgUrl: '/img/daiquiri.jpg',
-    offX: -110,
+    imgUrl: '/img/bnb.jpg',
+    offX: -20,
+  },
+  {
+    name: 'Manhattan',
+    recipe: [
+      { name: 'Rye whisky', amount: 60, unit: 'ml' },
+      { name: 'Red vermouth', amount: 30, unit: 'ml' },
+      { name: 'Angostura bitters', amount: 2, unit: 'dash' },
+    ],
+    imgUrl: '/img/manhattan.jpg',
+    offX: 0,
+    offY: -20,
+  },
+  {
+    name: 'Aviation',
+    recipe: [
+      { name: 'Gin', amount: 60, unit: 'ml' },
+      { name: 'Lemon juice', amount: 15, unit: 'ml' },
+      { name: 'Violet syrup', amount: 15, unit: 'ml' },
+      { name: 'Maraschino liqueur', amount: 7.5, unit: 'ml' },
+    ],
+    imgUrl: '/img/aviation.jpg',
+    offX: -55,
   },
   {
     name: 'Earl Grey MarTEAni',
@@ -49,9 +70,9 @@ const drinks: Cocktail[] = [
       { name: 'Egg white', amount: 30, unit: 'ml' },
     ],
     imgUrl: '/img/earl-grey-marteani.jpg',
-    zoom: 150,
-    offX: -30,
+    offX: -26,
     offY: -85,
+    zoom: 176,
   },
   {
     name: 'Whisky Sour',
@@ -65,15 +86,6 @@ const drinks: Cocktail[] = [
     offX: -20,
   },
   {
-    name: 'Coffee Martini',
-    recipe: [
-      { name: 'Vodka', amount: 50, unit: 'ml' },
-      { name: 'Coffee liqueur', amount: 30, unit: 'ml' },
-      { name: 'Coffee', amount: 30, unit: 'ml' },
-    ],
-    imgUrl: '/img/espresso-martini.jpg',
-  },
-  {
     name: 'White Russian',
     recipe: [
       { name: 'Coffee liqueur', amount: 30, unit: 'ml' },
@@ -81,6 +93,35 @@ const drinks: Cocktail[] = [
       { name: 'Heavy cream', amount: 30, unit: 'ml' },
     ],
     imgUrl: '/img/white-russian.jpg',
+  },
+  {
+    name: 'Black Russian',
+    recipe: [
+      { name: 'Coffee liqueur', amount: 30, unit: 'ml' },
+      { name: 'Vodka', amount: 30, unit: 'ml' },
+    ],
+    imgUrl: '/img/black-russian.jpg',
+  },
+  {
+    name: 'Coffee Martini',
+    recipe: [
+      { name: 'Vodka', amount: 50, unit: 'ml' },
+      { name: 'Coffee liqueur', amount: 30, unit: 'ml' },
+      { name: 'Coffee', amount: 30, unit: 'ml' },
+    ],
+    imgUrl: '/img/coffee-martini.jpg',
+    offY: -15,
+  },
+  {
+    name: 'Toasted Almond',
+    recipe: [
+      { name: 'Vodka', amount: 30, unit: 'ml', opt: true },
+      { name: 'Amaretto (almond liqueur)', amount: 30, unit: 'ml' },
+      { name: 'Coffee liqueur', amount: 30, unit: 'ml' },
+      { name: 'Heavy cream', amount: 10, unit: 'ml' },
+    ],
+    imgUrl: '/img/roasted-toasted-almond.jpg',
+    offX: -90,
   },
   {
     name: 'Blue Hawaii',
@@ -106,16 +147,6 @@ const drinks: Cocktail[] = [
     offX: -110,
   },
   {
-    name: 'Piña colada',
-    recipe: [
-      { name: 'White rum', amount: 60, unit: 'ml' },
-      { name: 'Pinapple juice', amount: 60, unit: 'ml' },
-      { name: 'Creme of Coconut', amount: 30, unit: 'ml' },
-    ],
-    imgUrl: '/img/pina-colada.jpg',
-    disabled: true,
-  },
-  {
     name: 'Blue Lagoon',
     recipe: [
       { name: 'Vodka', amount: 50, unit: 'ml' },
@@ -127,16 +158,14 @@ const drinks: Cocktail[] = [
     imgUrl: '/img/blue-lagoon.jpg',
   },
   {
-    name: 'Trinidad Sour',
+    name: 'Blue Ocean',
     recipe: [
-      { name: 'Angostura bitters', amount: 30, unit: 'ml' },
-      { name: 'Orgeat', amount: 30, unit: 'ml' },
-      { name: 'Rye whisky', amount: 15, unit: 'ml' },
-      { name: 'Lemon juice', amount: 20, unit: 'ml' },
-      { name: 'Mint', amount: 3, unit: 'leaf', gar: true },
+      { name: 'Vodka', amount: 30, unit: 'ml' },
+      { name: 'Blue curacao', amount: 15, unit: 'ml' },
+      { name: 'Sugar syrup', amount: 15, unit: 'ml' },
+      { name: 'Grapefruit juice', amount: 30, unit: 'ml' },
     ],
-    imgUrl: '/img/trinidad-sour.jpg',
-    disabled: true,
+    imgUrl: '/img/blue-ocean.png',
   },
   {
     name: 'Godfather',
@@ -166,6 +195,27 @@ const drinks: Cocktail[] = [
     imgUrl: '/img/negroni.jpg',
   },
   {
+    name: 'Trinidad Sour',
+    recipe: [
+      { name: 'Angostura bitters', amount: 30, unit: 'ml' },
+      { name: 'Orgeat', amount: 30, unit: 'ml' },
+      // { name: 'Rye whisky', amount: 15, unit: 'ml' },
+      { name: 'Whisky', amount: 15, unit: 'ml' },
+      { name: 'Lemon juice', amount: 20, unit: 'ml' },
+      { name: 'Mint', amount: 3, unit: 'leaf', gar: true },
+    ],
+    imgUrl: '/img/trinidad-sour.jpg',
+  },
+  {
+    name: 'Piña colada',
+    recipe: [
+      { name: 'White rum', amount: 60, unit: 'ml' },
+      { name: 'Pinapple juice', amount: 60, unit: 'ml' },
+      { name: 'Creme of Coconut', amount: 30, unit: 'ml' },
+    ],
+    imgUrl: '/img/pina-colada.jpg',
+  },
+  {
     name: 'Mai Tai',
     recipe: [
       { name: 'Dark rum', amount: 60, unit: 'ml' },
@@ -176,7 +226,6 @@ const drinks: Cocktail[] = [
       { name: 'Mint', amount: 2, unit: 'leaf', gar: true },
     ],
     imgUrl: '/img/mai-tai.jpg',
-    disabled: true,
   },
   {
     name: 'Tequila Sunrise',
@@ -199,6 +248,40 @@ const drinks: Cocktail[] = [
     ],
     imgUrl: '/img/margarita.jpg',
     offX: -20,
+    disabled: true,
+  },
+  {
+    name: 'Vodka Paloma',
+    recipe: [
+      { name: 'Vodka', amount: 45, unit: 'ml' },
+      { name: 'Grapefruit juice', amount: 100, unit: 'ml' },
+      { name: 'Lime juice', amount: 20, unit: 'ml' },
+      { name: 'Sugar syrup', amount: 20, unit: 'ml' },
+      { name: 'Soda', amount: 100, unit: 'ml' },
+    ],
+    imgUrl: '/img/paloma.jpg',
+    offX: -20,
+  },
+  {
+    name: 'Daiquiri',
+    recipe: [
+      { name: 'White rum', amount: 60, unit: 'ml' },
+      { name: 'Lemon juice', amount: 30, unit: 'ml' },
+      { name: 'Sugar syrup', amount: 20, unit: 'ml' },
+    ],
+    imgUrl: '/img/daiquiri.jpg',
+    offX: -110,
+  },
+  {
+    name: 'White Lady',
+    recipe: [
+      { name: 'Gin', amount: 45, unit: 'ml' },
+      { name: 'Triple Sec', amount: 25, unit: 'ml' },
+      { name: 'Lemon juice', amount: 20, unit: 'ml' },
+      { name: 'Sugar syrup', amount: 10, unit: 'ml' },
+      { name: 'Egg white', amount: 30, unit: 'ml', opt: true },
+    ],
+    imgUrl: '/img/white-lady.jpg',
   },
   {
     name: 'Ivy Gimlet',
@@ -214,6 +297,33 @@ const drinks: Cocktail[] = [
     zoom: 125,
   },
   {
+    name: 'Southside',
+    recipe: [
+      { name: 'Gin', amount: 60, unit: 'ml' },
+      { name: 'Lime juice', amount: 20, unit: 'ml' },
+      { name: 'Simple syrup', amount: 20, unit: 'ml' },
+      { name: 'Mint', amount: 4, unit: 'leaf' },
+    ],
+    imgUrl: '/img/southside.jpg',
+    offX: -17,
+    offY: -7,
+    zoom: 150,
+  },
+  {
+    name: 'Eastside',
+    recipe: [
+      { name: 'Gin', amount: 60, unit: 'ml' },
+      { name: 'Lime juice', amount: 20, unit: 'ml' },
+      { name: 'Simple syrup', amount: 20, unit: 'ml' },
+      { name: 'Cucumber', amount: 3, unit: 'slice' },
+      { name: 'Mint', amount: 4, unit: 'leaf' },
+    ],
+    imgUrl: '/img/eastside.jpg',
+    offX: -10,
+    offY: -15,
+    zoom: 150,
+  },
+  {
     name: "The Bee's Knees",
     recipe: [
       { name: 'Gin', amount: 60, unit: 'ml' },
@@ -225,28 +335,6 @@ const drinks: Cocktail[] = [
     offX: -20,
     offY: -70,
     disabled: true,
-  },
-  {
-    name: 'White Lady',
-    recipe: [
-      { name: 'Gin', amount: 45, unit: 'ml' },
-      { name: 'Triple Sec', amount: 25, unit: 'ml' },
-      { name: 'Lemon juice', amount: 20, unit: 'ml' },
-      { name: 'Sugar syrup', amount: 10, unit: 'ml' },
-      { name: 'Egg white', amount: 30, unit: 'ml', opt: true },
-    ],
-    imgUrl: '/img/white-lady.jpg',
-  },
-  {
-    name: 'Aviation',
-    recipe: [
-      { name: 'Gin', amount: 60, unit: 'ml' },
-      { name: 'Lemon juice', amount: 15, unit: 'ml' },
-      { name: 'Violet syrup', amount: 15, unit: 'ml' },
-      { name: 'Maraschino liqueur', amount: 7.5, unit: 'ml' },
-    ],
-    imgUrl: '/img/aviation.jpg',
-    offX: -55,
   },
   {
     name: "Dark'n'Stormy",
@@ -272,17 +360,6 @@ const drinks: Cocktail[] = [
     zoom: 130,
     offY: -40,
     offX: -20,
-  },
-  {
-    name: 'Manhattan',
-    recipe: [
-      { name: 'Rye whisky', amount: 60, unit: 'ml' },
-      { name: 'Red vermouth', amount: 30, unit: 'ml' },
-      { name: 'Angostura bitters', amount: 2, unit: 'dash' },
-    ],
-    imgUrl: '/img/manhattan.jpg',
-    offX: 0,
-    offY: -20,
   },
   {
     name: 'Martini',
@@ -333,29 +410,6 @@ const drinks: Cocktail[] = [
     offX: -10,
   },
   {
-    name: 'Toasted Almond',
-    recipe: [
-      { name: 'Vodka', amount: 30, unit: 'ml', opt: true },
-      { name: 'Amaretto (almond liqueur)', amount: 30, unit: 'ml' },
-      { name: 'Coffee liqueur', amount: 30, unit: 'ml' },
-      { name: 'Heavy cream', amount: 10, unit: 'ml' },
-    ],
-    imgUrl: '/img/roasted-toasted-almond.jpg',
-    offX: -90,
-  },
-  {
-    name: 'Vodka Paloma',
-    recipe: [
-      { name: 'Vodka', amount: 45, unit: 'ml' },
-      { name: 'Grapefruit juice', amount: 100, unit: 'ml' },
-      { name: 'Lime juice', amount: 20, unit: 'ml' },
-      { name: 'Sugar syrup', amount: 20, unit: 'ml' },
-      { name: 'Soda', amount: 100, unit: 'ml' },
-    ],
-    imgUrl: '/img/paloma.jpg',
-    offX: -20,
-  },
-  {
     name: 'Blue Kamikaze (shot)',
     recipe: [
       { name: 'Vodka', amount: 50, unit: 'ml' },
@@ -364,6 +418,7 @@ const drinks: Cocktail[] = [
     ],
     imgUrl: '/img/blue-kamikaze.jpg',
     offX: -90,
+    disabled: true,
   },
 ].filter(drink => !drink.disabled);
 
