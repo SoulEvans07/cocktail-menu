@@ -1,4 +1,5 @@
 import { CSSProperties, ReactElement } from 'react';
+import classNames from 'classnames';
 import './index.scss';
 
 interface Ingredient {
@@ -17,6 +18,7 @@ interface Cocktail {
   zoom?: number;
   recipe: Ingredient[];
   disabled?: boolean;
+  unavailable?: boolean;
 }
 
 const drinks: Cocktail[] = [
@@ -52,6 +54,7 @@ const drinks: Cocktail[] = [
   },
   {
     name: 'Aviation',
+    unavailable: true,
     recipe: [
       { name: 'Gin', amount: 60, unit: 'ml' },
       { name: 'Lemon juice', amount: 15, unit: 'ml' },
@@ -239,18 +242,6 @@ const drinks: Cocktail[] = [
     disabled: true,
   },
   {
-    name: 'Margarita',
-    recipe: [
-      { name: 'Tequila', amount: 60, unit: 'ml' },
-      { name: 'Lime juice', amount: 30, unit: 'ml' },
-      { name: 'Triple Sec', amount: 30, unit: 'ml' },
-      { name: 'Salt', amount: 0.5, unit: 'glass rim', gar: true },
-    ],
-    imgUrl: '/img/margarita.jpg',
-    offX: -20,
-    disabled: true,
-  },
-  {
     name: 'Vodka Paloma',
     recipe: [
       { name: 'Vodka', amount: 45, unit: 'ml' },
@@ -362,18 +353,6 @@ const drinks: Cocktail[] = [
     offX: -20,
   },
   {
-    name: 'Martini',
-    recipe: [
-      { name: 'Gin', amount: 60, unit: 'ml' },
-      { name: 'Dry vermouth', amount: 30, unit: 'ml' },
-      { name: 'Orange bitters', amount: 2, unit: 'dash' },
-    ],
-    imgUrl: '/img/martini.jpg',
-    offX: -40,
-    offY: 0,
-    disabled: true,
-  },
-  {
     name: "Dune's Spice Coffee",
     recipe: [
       { name: 'Coffee', amount: 90, unit: 'ml' },
@@ -387,15 +366,27 @@ const drinks: Cocktail[] = [
     disabled: true,
   },
   {
-    name: 'Between the Sheets',
+    name: 'Margarita',
     recipe: [
-      { name: 'Brandy', amount: 20, unit: 'ml' },
-      { name: 'White Rum', amount: 20, unit: 'ml' },
-      { name: 'Triple Sec', amount: 20, unit: 'ml' },
-      { name: 'Lemon juice', amount: 10, unit: 'ml' },
+      { name: 'Tequila', amount: 60, unit: 'ml' },
+      { name: 'Lime juice', amount: 30, unit: 'ml' },
+      { name: 'Triple Sec', amount: 30, unit: 'ml' },
+      { name: 'Salt', amount: 0.5, unit: 'glass rim', gar: true },
     ],
-    imgUrl: '/img/between-the-sheets.jpg',
-    offX: -10,
+    imgUrl: '/img/margarita.jpg',
+    offX: -20,
+    unavailable: true,
+  },
+  {
+    name: 'Martini',
+    recipe: [
+      { name: 'Gin', amount: 60, unit: 'ml' },
+      { name: 'Dry vermouth', amount: 30, unit: 'ml' },
+      { name: 'Orange bitters', amount: 2, unit: 'dash' },
+    ],
+    imgUrl: '/img/martini.jpg',
+    offX: -40,
+    offY: 0,
   },
   {
     name: 'Sidecar',
@@ -407,6 +398,17 @@ const drinks: Cocktail[] = [
       { name: 'Lemon twist', amount: 1, unit: 'piece', gar: true },
     ],
     imgUrl: '/img/sidecar.jpg',
+    offX: -10,
+  },
+  {
+    name: 'Between the Sheets',
+    recipe: [
+      { name: 'Brandy', amount: 20, unit: 'ml' },
+      { name: 'White Rum', amount: 20, unit: 'ml' },
+      { name: 'Triple Sec', amount: 20, unit: 'ml' },
+      { name: 'Lemon juice', amount: 10, unit: 'ml' },
+    ],
+    imgUrl: '/img/between-the-sheets.jpg',
     offX: -10,
   },
   {
@@ -487,7 +489,7 @@ export default function CocktailMenu(): ReactElement {
     };
 
     return (
-      <div className="cocktail" key={drink.name} title={spirit}>
+      <div className={classNames('cocktail', { unavailable: drink.unavailable })} key={drink.name} title={spirit}>
         <div className="recipe">
           <div className="title-block">
             <span className="title">{drink.name}</span>
