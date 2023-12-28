@@ -1,6 +1,5 @@
 import { CSSProperties, ReactElement } from 'react';
 import classNames from 'classnames';
-import './index.scss';
 
 interface Ingredient {
   name: string;
@@ -193,7 +192,7 @@ const drinks: Cocktail[] = [
       { name: 'Campari', amount: 30, unit: 'ml' },
       { name: 'Gin', amount: 30, unit: 'ml' },
       { name: 'Red vermouth', amount: 30, unit: 'ml' },
-      { name: 'Orange twist', amount: 3, unit: 'piece', gar: true },
+      { name: 'Orange twist', amount: 1, unit: 'piece', gar: true },
     ],
     imgUrl: '/img/negroni.jpg',
   },
