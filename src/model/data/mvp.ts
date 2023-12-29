@@ -353,6 +353,17 @@ export const ingredients = [
     possibleUnitIds: [],
   },
   {
+    id: 'kevert',
+    name: 'Kevert',
+    description: '',
+    image: {
+      url: '',
+      icon: {},
+    },
+    tagIds: [],
+    possibleUnitIds: [],
+  },
+  {
     id: 'lemon-juice',
     name: 'Lemon juice',
     description: '',
@@ -1022,6 +1033,21 @@ export const cocktails: Cocktail[] = [
       url: '/img/trinidad-sour.jpg',
       card: {},
       page: {},
+    },
+  },
+  {
+    id: faker.string.uuid(),
+    name: 'Kevert soda (microwaved)',
+    description: '',
+    recipe: [
+      { ingredientId: 'kevert', unitId: 'ml', amount: 50 },
+      { ingredientId: 'soda', unitId: 'ml', amount: 50 },
+    ],
+    tagIds: ['other'],
+    image: {
+      url: '/img/kevert-soda.jpeg',
+      card: { offX: -40 },
+      page: { offY: -60 },
     },
   },
   {
