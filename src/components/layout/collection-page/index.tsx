@@ -26,7 +26,7 @@ export function CollectionPage(props: CollectionPageProps) {
     <div
       className={cn(
         'mx-1 flex max-h-[calc(100vh-64px)] w-full flex-shrink-0 flex-row overflow-x-hidden bg-slate-200 opacity-50',
-        { 'absolute inset-0 mx-0 max-h-screen opacity-100': active }
+        { 'absolute inset-0 mx-0 max-h-full opacity-100': active }
       )}
       style={{}}
     >
