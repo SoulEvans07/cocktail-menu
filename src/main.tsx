@@ -5,10 +5,10 @@ import '~/polyfills';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-import { App } from '~/screens';
+import { CollectionPage } from '~/screens/collection-page';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <App />
+    <CollectionPage active />
   </React.StrictMode>
 );
