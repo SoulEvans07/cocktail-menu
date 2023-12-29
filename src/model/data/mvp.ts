@@ -80,6 +80,7 @@ export const ingredients = [
     description: '',
     image: {
       url: '',
+      icon: {},
     },
     tagKeys: [],
     possibleUnitIds: [],
@@ -90,6 +91,7 @@ export const ingredients = [
     description: '',
     image: {
       url: '',
+      icon: {},
     },
     tagKeys: [],
     possibleUnitIds: [],
@@ -100,6 +102,7 @@ export const ingredients = [
     description: '',
     image: {
       url: '',
+      icon: {},
     },
     tagKeys: [],
     possibleUnitIds: [],
@@ -110,6 +113,7 @@ export const ingredients = [
     description: '',
     image: {
       url: '',
+      icon: {},
     },
     tagKeys: [],
     possibleUnitIds: [],
@@ -120,6 +124,7 @@ export const ingredients = [
     description: '',
     image: {
       url: '',
+      icon: {},
     },
     tagKeys: [],
     possibleUnitIds: [],
@@ -130,6 +135,7 @@ export const ingredients = [
     description: '',
     image: {
       url: '',
+      icon: {},
     },
     tagKeys: [],
     possibleUnitIds: [],
@@ -140,6 +146,7 @@ export const ingredients = [
     description: '',
     image: {
       url: '',
+      icon: {},
     },
     tagKeys: [],
     possibleUnitIds: [],
@@ -150,6 +157,7 @@ export const ingredients = [
     description: '',
     image: {
       url: '',
+      icon: {},
     },
     tagKeys: [],
     possibleUnitIds: [],
@@ -160,6 +168,7 @@ export const ingredients = [
     description: '',
     image: {
       url: '',
+      icon: {},
     },
     tagKeys: [],
     possibleUnitIds: [],
@@ -170,6 +179,7 @@ export const ingredients = [
     description: '',
     image: {
       url: '',
+      icon: {},
     },
     tagKeys: [],
     possibleUnitIds: [],
@@ -180,6 +190,7 @@ export const ingredients = [
     description: '',
     image: {
       url: '',
+      icon: {},
     },
     tagKeys: [],
     possibleUnitIds: [],
@@ -190,6 +201,7 @@ export const ingredients = [
     description: '',
     image: {
       url: '',
+      icon: {},
     },
     tagKeys: [],
     possibleUnitIds: [],
@@ -200,6 +212,7 @@ export const ingredients = [
     description: '',
     image: {
       url: '',
+      icon: {},
     },
     tagKeys: [],
     possibleUnitIds: [],
@@ -210,6 +223,7 @@ export const ingredients = [
     description: '',
     image: {
       url: '',
+      icon: {},
     },
     tagKeys: [],
     possibleUnitIds: [],
@@ -220,6 +234,7 @@ export const ingredients = [
     description: '',
     image: {
       url: '',
+      icon: {},
     },
     tagKeys: [],
     possibleUnitIds: [],
@@ -230,6 +245,7 @@ export const ingredients = [
     description: '',
     image: {
       url: '',
+      icon: {},
     },
     tagKeys: [],
     possibleUnitIds: [],
@@ -240,6 +256,7 @@ export const ingredients = [
     description: '',
     image: {
       url: '',
+      icon: {},
     },
     tagKeys: [],
     possibleUnitIds: [],
@@ -250,6 +267,7 @@ export const ingredients = [
     description: '',
     image: {
       url: '',
+      icon: {},
     },
     tagKeys: [],
     possibleUnitIds: [],
@@ -260,6 +278,7 @@ export const ingredients = [
     description: '',
     image: {
       url: '',
+      icon: {},
     },
     tagKeys: [],
     possibleUnitIds: [],
@@ -270,6 +289,7 @@ export const ingredients = [
     description: '',
     image: {
       url: '',
+      icon: {},
     },
     tagKeys: [],
     possibleUnitIds: [],
@@ -280,6 +300,7 @@ export const ingredients = [
     description: '',
     image: {
       url: '',
+      icon: {},
     },
     tagKeys: [],
     possibleUnitIds: [],
@@ -290,6 +311,7 @@ export const ingredients = [
     description: '',
     image: {
       url: '',
+      icon: {},
     },
     tagKeys: [],
     possibleUnitIds: [],
@@ -300,6 +322,7 @@ export const ingredients = [
     description: '',
     image: {
       url: '',
+      icon: {},
     },
     tagKeys: [],
     possibleUnitIds: [],
@@ -310,6 +333,7 @@ export const ingredients = [
     description: '',
     image: {
       url: '',
+      icon: {},
     },
     tagKeys: [],
     possibleUnitIds: [],
@@ -320,6 +344,7 @@ export const ingredients = [
     description: '',
     image: {
       url: '',
+      icon: {},
     },
     tagKeys: [],
     possibleUnitIds: [],
@@ -330,6 +355,7 @@ export const ingredients = [
     description: '',
     image: {
       url: '',
+      icon: {},
     },
     tagKeys: [],
     possibleUnitIds: [],
@@ -340,6 +366,7 @@ export const ingredients = [
     description: '',
     image: {
       url: '',
+      icon: {},
     },
     tagKeys: [],
     possibleUnitIds: [],
@@ -350,6 +377,7 @@ export const ingredients = [
     description: '',
     image: {
       url: '',
+      icon: {},
     },
     tagKeys: [],
     possibleUnitIds: [],
@@ -360,6 +388,7 @@ export const ingredients = [
     description: '',
     image: {
       url: '',
+      icon: {},
     },
     tagKeys: [],
     possibleUnitIds: [],
@@ -370,6 +399,7 @@ export const ingredients = [
     description: '',
     image: {
       url: '',
+      icon: {},
     },
     tagKeys: [],
     possibleUnitIds: [],
@@ -380,6 +410,7 @@ export const ingredients = [
     description: '',
     image: {
       url: '',
+      icon: {},
     },
     tagKeys: [],
     possibleUnitIds: [],
@@ -390,6 +421,7 @@ export const ingredients = [
     description: '',
     image: {
       url: '',
+      icon: {},
     },
     tagKeys: [],
     possibleUnitIds: [],
@@ -400,6 +432,7 @@ export const ingredients = [
     description: '',
     image: {
       url: '',
+      icon: {},
     },
     tagKeys: [],
     possibleUnitIds: [],
@@ -410,6 +443,7 @@ export const ingredients = [
     description: '',
     image: {
       url: '',
+      icon: {},
     },
     tagKeys: [],
     possibleUnitIds: [],
@@ -420,6 +454,7 @@ export const ingredients = [
     description: '',
     image: {
       url: '',
+      icon: {},
     },
     tagKeys: [],
     possibleUnitIds: [],
@@ -430,6 +465,7 @@ export const ingredients = [
     description: '',
     image: {
       url: '',
+      icon: {},
     },
     tagKeys: [],
     possibleUnitIds: [],
@@ -440,6 +476,7 @@ export const ingredients = [
     description: '',
     image: {
       url: '',
+      icon: {},
     },
     tagKeys: [],
     possibleUnitIds: [],
@@ -450,6 +487,7 @@ export const ingredients = [
     description: '',
     image: {
       url: '',
+      icon: {},
     },
     tagKeys: [],
     possibleUnitIds: [],
@@ -460,6 +498,7 @@ export const ingredients = [
     description: '',
     image: {
       url: '',
+      icon: {},
     },
     tagKeys: [],
     possibleUnitIds: [],
@@ -470,6 +509,7 @@ export const ingredients = [
     description: '',
     image: {
       url: '',
+      icon: {},
     },
     tagKeys: [],
     possibleUnitIds: [],
@@ -480,6 +520,7 @@ export const ingredients = [
     description: '',
     image: {
       url: '',
+      icon: {},
     },
     tagKeys: [],
     possibleUnitIds: [],
@@ -490,6 +531,7 @@ export const ingredients = [
     description: '',
     image: {
       url: '',
+      icon: {},
     },
     tagKeys: [],
     possibleUnitIds: [],
@@ -500,6 +542,7 @@ export const ingredients = [
     description: '',
     image: {
       url: '',
+      icon: {},
     },
     tagKeys: [],
     possibleUnitIds: [],
@@ -510,6 +553,7 @@ export const ingredients = [
     description: '',
     image: {
       url: '',
+      icon: {},
     },
     tagKeys: [],
     possibleUnitIds: [],
@@ -520,6 +564,7 @@ export const ingredients = [
     description: '',
     image: {
       url: '',
+      icon: {},
     },
     tagKeys: [],
     possibleUnitIds: [],
@@ -530,6 +575,7 @@ export const ingredients = [
     description: '',
     image: {
       url: '',
+      icon: {},
     },
     tagKeys: [],
     possibleUnitIds: [],
@@ -540,6 +586,7 @@ export const ingredients = [
     description: '',
     image: {
       url: '',
+      icon: {},
     },
     tagKeys: [],
     possibleUnitIds: [],
@@ -550,6 +597,7 @@ export const ingredients = [
     description: '',
     image: {
       url: '',
+      icon: {},
     },
     tagKeys: [],
     possibleUnitIds: [],
@@ -560,6 +608,7 @@ export const ingredients = [
     description: '',
     image: {
       url: '',
+      icon: {},
     },
     tagKeys: [],
     possibleUnitIds: [],
@@ -570,6 +619,7 @@ export const ingredients = [
     description: '',
     image: {
       url: '',
+      icon: {},
     },
     tagKeys: [],
     possibleUnitIds: [],
@@ -642,17 +692,13 @@ export const cocktails: Cocktail[] = [
       { ingredientId: 'bourbon-whisky', unitId: 'ml', amount: 60 },
       { ingredientId: 'demerara-syrup', unitId: 'ml', amount: 10 },
       { ingredientId: 'angostura-bitters', unitId: 'ml', amount: 2 },
-      // eslint-disable-next-line prettier/prettier
-      {
-        ingredientId: 'orange-twist',
-        unitId: 'piece',
-        amount: 1,
-        garnish: true,
-      },
+      { ingredientId: 'orange-twist', unitId: 'piece', amount: 1, garnish: true },
     ],
     tagKeys: ['whisky'],
     image: {
       url: '/img/old-fashioned.jpg',
+      card: {},
+      page: {},
     },
   },
   {
@@ -666,7 +712,8 @@ export const cocktails: Cocktail[] = [
     tagKeys: ['brandy'],
     image: {
       url: '/img/bnb.jpg',
-      offX: -20,
+      card: { offX: -20 },
+      page: { offX: -20 },
     },
   },
   {
@@ -681,8 +728,8 @@ export const cocktails: Cocktail[] = [
     tagKeys: ['whisky'],
     image: {
       url: '/img/manhattan.jpg',
-      offX: 0,
-      offY: -20,
+      card: { offX: 0, offY: -20 },
+      page: { offX: 0, offY: -20 },
     },
   },
   {
@@ -698,7 +745,8 @@ export const cocktails: Cocktail[] = [
     tagKeys: ['gin'],
     image: {
       url: '/img/aviation.jpg',
-      offX: -55,
+      card: { offX: -55 },
+      page: { offX: -55 },
     },
   },
   {
@@ -714,9 +762,8 @@ export const cocktails: Cocktail[] = [
     tagKeys: ['gin'],
     image: {
       url: '/img/earl-grey-marteani.jpg',
-      offX: -26,
-      offY: -85,
-      scale: 176,
+      card: { offX: -26, offY: -85, scale: 176 },
+      page: { offX: -26, offY: -85, scale: 176 },
     },
   },
   {
@@ -732,7 +779,8 @@ export const cocktails: Cocktail[] = [
     tagKeys: ['whisky'],
     image: {
       url: '/img/whisky-sour.jpg',
-      offX: -20,
+      card: { offX: -20 },
+      page: { offX: -20 },
     },
   },
   {
@@ -747,6 +795,8 @@ export const cocktails: Cocktail[] = [
     tagKeys: ['vodka'],
     image: {
       url: '/img/white-russian.jpg',
+      card: {},
+      page: {},
     },
   },
   {
@@ -760,6 +810,8 @@ export const cocktails: Cocktail[] = [
     tagKeys: ['vodka'],
     image: {
       url: '/img/black-russian.jpg',
+      card: {},
+      page: {},
     },
   },
   {
@@ -774,7 +826,8 @@ export const cocktails: Cocktail[] = [
     tagKeys: ['vodka'],
     image: {
       url: '/img/coffee-martini.jpg',
-      offY: -15,
+      card: { offY: -15 },
+      page: { offY: -15 },
     },
   },
   {
@@ -790,7 +843,8 @@ export const cocktails: Cocktail[] = [
     tagKeys: ['vodka'],
     image: {
       url: '/img/roasted-toasted-almond.jpg',
-      offX: -90,
+      card: { offX: -90 },
+      page: { offX: 0 },
     },
   },
   {
@@ -808,6 +862,8 @@ export const cocktails: Cocktail[] = [
     tagKeys: ['rum'],
     image: {
       url: '/img/blue-hawaii.jpg',
+      card: {},
+      page: {},
     },
   },
   {
@@ -823,7 +879,8 @@ export const cocktails: Cocktail[] = [
     tagKeys: ['rum'],
     image: {
       url: '/img/blue-hawaiian.jpg',
-      offX: -110,
+      card: { offX: -110 },
+      page: { offX: -110 },
     },
   },
   {
@@ -840,6 +897,8 @@ export const cocktails: Cocktail[] = [
     tagKeys: ['vodka'],
     image: {
       url: '/img/blue-lagoon.jpg',
+      card: {},
+      page: {},
     },
   },
   {
@@ -855,6 +914,8 @@ export const cocktails: Cocktail[] = [
     tagKeys: ['vodka'],
     image: {
       url: '/img/blue-ocean.png',
+      card: {},
+      page: {},
     },
   },
   {
@@ -868,6 +929,8 @@ export const cocktails: Cocktail[] = [
     tagKeys: ['whisky'],
     image: {
       url: '/img/godfather.jpg',
+      card: {},
+      page: {},
     },
   },
   {
@@ -881,7 +944,8 @@ export const cocktails: Cocktail[] = [
     tagKeys: ['vodka'],
     image: {
       url: '/img/godmother.jpg',
-      offX: -35,
+      card: { offX: -35 },
+      page: { offX: -35 },
     },
   },
   {
@@ -892,17 +956,13 @@ export const cocktails: Cocktail[] = [
       { ingredientId: 'campari', unitId: 'ml', amount: 30 },
       { ingredientId: 'gin', unitId: 'ml', amount: 30 },
       { ingredientId: 'red-vermouth', unitId: 'ml', amount: 30 },
-      // eslint-disable-next-line prettier/prettier
-      {
-        ingredientId: 'orange-twist',
-        unitId: 'piece',
-        amount: 1,
-        garnish: true,
-      },
+      { ingredientId: 'orange-twist', unitId: 'piece', amount: 1, garnish: true },
     ],
     tagKeys: ['gin'],
     image: {
       url: '/img/negroni.jpg',
+      card: {},
+      page: {},
     },
   },
   {
@@ -919,6 +979,8 @@ export const cocktails: Cocktail[] = [
     tagKeys: ['other'],
     image: {
       url: '/img/trinidad-sour.jpg',
+      card: {},
+      page: {},
     },
   },
   {
@@ -933,6 +995,8 @@ export const cocktails: Cocktail[] = [
     tagKeys: ['rum'],
     image: {
       url: '/img/pina-colada.jpg',
+      card: {},
+      page: {},
     },
   },
   {
@@ -950,6 +1014,8 @@ export const cocktails: Cocktail[] = [
     tagKeys: ['rum'],
     image: {
       url: '/img/mai-tai.jpg',
+      card: {},
+      page: {},
     },
   },
   // {
@@ -964,7 +1030,8 @@ export const cocktails: Cocktail[] = [
   //   tagKeys: ['tequila'],
   //   image: {
   //     url: '/img/tequila-sunrise.jpg',
-  //     offX: -25,
+  //     card: { offX: -25 },
+  //     page: { offX: -25 },
   //   },
   // },
   {
@@ -981,7 +1048,8 @@ export const cocktails: Cocktail[] = [
     tagKeys: ['vodka'],
     image: {
       url: '/img/paloma.jpg',
-      offX: -20,
+      card: { offX: -20 },
+      page: { offX: -20 },
     },
   },
   {
@@ -996,7 +1064,8 @@ export const cocktails: Cocktail[] = [
     tagKeys: ['rum'],
     image: {
       url: '/img/daiquiri.jpg',
-      offX: -110,
+      card: { offX: -110 },
+      page: { offX: -110 },
     },
   },
   {
@@ -1011,7 +1080,8 @@ export const cocktails: Cocktail[] = [
     tagKeys: ['rum'],
     image: {
       url: '/img/daiquiri.jpg',
-      offX: -110,
+      card: { offX: -110 },
+      page: { offX: -110 },
     },
   },
   {
@@ -1023,13 +1093,14 @@ export const cocktails: Cocktail[] = [
       { ingredientId: 'triple-sec', unitId: 'ml', amount: 25 },
       { ingredientId: 'lemon-juice', unitId: 'ml', amount: 20 },
       { ingredientId: 'simple-syrup', unitId: 'ml', amount: 10 },
-      // eslint-disable-next-line prettier/prettier
       { ingredientId: 'egg-white', unitId: 'ml', amount: 30, optional: true },
       { ingredientId: 'sugar', unitId: 'rim', amount: 1, garnish: true },
     ],
     tagKeys: ['gin'],
     image: {
       url: '/img/white-lady.jpg',
+      card: {},
+      page: {},
     },
   },
   {
@@ -1045,9 +1116,8 @@ export const cocktails: Cocktail[] = [
     tagKeys: ['vodka'],
     image: {
       url: '/img/ivy-gimlet.jpg',
-      offX: -30,
-      offY: -65,
-      scale: 125,
+      card: { offX: -30, offY: -65, scale: 125 },
+      page: { offX: -30, offY: -65, scale: 125 },
     },
   },
   {
@@ -1063,9 +1133,8 @@ export const cocktails: Cocktail[] = [
     tagKeys: ['gin'],
     image: {
       url: '/img/southside.jpg',
-      offX: -17,
-      offY: -7,
-      scale: 150,
+      card: { offX: -17, offY: -7, scale: 150 },
+      page: { offX: -17, offY: -7, scale: 150 },
     },
   },
   {
@@ -1082,9 +1151,8 @@ export const cocktails: Cocktail[] = [
     tagKeys: ['gin'],
     image: {
       url: '/img/eastside.jpg',
-      offX: -10,
-      offY: -15,
-      scale: 150,
+      card: { offX: -10, offY: -15, scale: 150 },
+      page: { offX: -10, offY: -15, scale: 150 },
     },
   },
   {
@@ -1099,9 +1167,8 @@ export const cocktails: Cocktail[] = [
     tagKeys: ['gin'],
     image: {
       url: '/img/bees-knees.jpg',
-      scale: 150,
-      offX: -20,
-      offY: -70,
+      card: { offX: -20, offY: -70, scale: 150 },
+      page: { offX: -20, offY: -70, scale: 150 },
     },
   },
   {
@@ -1117,7 +1184,8 @@ export const cocktails: Cocktail[] = [
     tagKeys: ['rum'],
     image: {
       url: '/img/dark-n-stormy.jpg',
-      offX: -10,
+      card: { offX: -10 },
+      page: { offX: -10 },
     },
   },
   {
@@ -1134,9 +1202,8 @@ export const cocktails: Cocktail[] = [
     tagKeys: ['rum'],
     image: {
       url: '/img/ambrosia.jpg',
-      scale: 130,
-      offY: -40,
-      offX: -20,
+      card: { offX: -20, offY: -40, scale: 130 },
+      page: { offX: -20, offY: -40, scale: 130 },
     },
   },
   {
@@ -1153,7 +1220,8 @@ export const cocktails: Cocktail[] = [
     tagKeys: ['whisky'],
     image: {
       url: '/img/dune-spice-coffee.png',
-      offX: -130,
+      card: { offX: -130 },
+      page: { offX: -130 },
     },
   },
   // {
@@ -1169,7 +1237,8 @@ export const cocktails: Cocktail[] = [
   //   tagKeys: ['tequila'],
   //   image: {
   //     url: '/img/margarita.jpg',
-  //     offX: -20,
+  //     card: { offX: -20 },
+  //     page: { offX: -20 },
   //   },
   // },
   {
@@ -1184,8 +1253,8 @@ export const cocktails: Cocktail[] = [
     tagKeys: ['gin'],
     image: {
       url: '/img/martini.jpg',
-      offX: -40,
-      offY: 0,
+      card: { offX: -40, offY: 0 },
+      page: { offX: -40, offY: 0 },
     },
   },
   {
@@ -1197,18 +1266,13 @@ export const cocktails: Cocktail[] = [
       { ingredientId: 'cointreau', unitId: 'ml', amount: 30 },
       { ingredientId: 'lemon-juice', unitId: 'ml', amount: 15 },
       { ingredientId: 'sugar', unitId: 'rim', amount: 1, garnish: true },
-      // eslint-disable-next-line prettier/prettier
-      {
-        ingredientId: 'lemon-twist',
-        unitId: 'piece',
-        amount: 1,
-        garnish: true,
-      },
+      { ingredientId: 'lemon-twist', unitId: 'piece', amount: 1, garnish: true },
     ],
     tagKeys: ['brandy'],
     image: {
       url: '/img/sidecar.jpg',
-      offX: -10,
+      card: { offX: -10 },
+      page: { offX: -10 },
     },
   },
   {
@@ -1224,7 +1288,8 @@ export const cocktails: Cocktail[] = [
     tagKeys: ['brandy'],
     image: {
       url: '/img/between-the-sheets.jpg',
-      offX: -10,
+      card: { offX: -10 },
+      page: { offX: -10 },
     },
   },
   {
@@ -1239,7 +1304,8 @@ export const cocktails: Cocktail[] = [
     tagKeys: ['vodka'],
     image: {
       url: '/img/blue-kamikaze.jpg',
-      offX: -90,
+      card: { offX: -90 },
+      page: { offX: -90 },
     },
   },
 ] satisfies MockCocktail[];

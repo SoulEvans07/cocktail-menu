@@ -1,6 +1,7 @@
 import { type Config } from 'tailwindcss';
 import { fontFamily } from 'tailwindcss/defaultTheme';
 import plugin from 'tailwindcss/plugin';
+import animations from 'tailwindcss-animate';
 
 export default {
   content: ['./index.html', './src/**/*.tsx'],
@@ -15,6 +16,7 @@ export default {
     },
   },
   plugins: [
+    animations,
     plugin(function ({ addUtilities }) {
       addUtilities({
         // https://developer.mozilla.org/en-US/docs/Web/CSS/writing-mode

@@ -1,9 +1,14 @@
-export interface Image {
-  url: string;
+export interface ImgTransform {
   offX?: number;
   offY?: number;
   scale?: number;
 }
+
+export type Image<Variants extends string | never = never> = {
+  url: string;
+} & {
+  [V in Variants]: ImgTransform;
+};
 
 export interface Tag {
   key: string;
@@ -25,7 +30,7 @@ export interface Ingredient {
   description: string;
   tagKeys: Tag['key'][];
   tags?: Tag[];
-  image: Image;
+  image: Image<'icon'>;
   possibleUnitIds: Unit['id'][];
   possibleUnits?: Unit[];
 }
@@ -45,7 +50,7 @@ export interface Cocktail {
   name: string;
   description: string;
   recipe: RecipeItem[];
-  image: Image;
+  image: Image<'card' | 'page'>;
   tagKeys: Tag['key'][];
   tags?: Tag[];
   // glassShape?: string; P4: add glass shape

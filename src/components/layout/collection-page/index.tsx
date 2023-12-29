@@ -1,9 +1,15 @@
-'use client';
+import { useState, useMemo } from 'react';
 
-import { useState, type MouseEvent, useMemo } from 'react';
+import { type Cocktail } from '~/model/types/mvp';
+import { type CocktailTagKey, cocktails } from '~/model/data/mvp';
 import { cn } from '~/utils/cn';
-import type { StateSetter } from '~/types/common';
-import { type CocktailTagKey, cocktails, cocktailTags } from '~/model/data/mvp';
+import { useMediaQuery } from '~/utils/hooks/useMediaQuery';
+import { Drawer, DrawerContent, DrawerTrigger } from '~/components/drawer';
+
+import { CollectionSidebar } from './sidebar';
+import { CocktailCard } from './card';
+import { CocktailDetails } from './details';
+import { Sheet, SheetContent, SheetTrigger } from '~/components/sheet';
 
 type CollectionPageProps = {
   active: boolean;
@@ -33,80 +39,33 @@ export function CollectionPage(props: CollectionPageProps) {
       <CollectionSidebar selected={category} setSelected={setCategory} disabled={!active} />
       <div className="grid flex-1 flex-shrink-0 auto-rows-min grid-cols-2 gap-2 overflow-x-auto p-2 text-slate-800 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
         {filteredCocktails.map(cocktail => (
-          <div key={cocktail.id} className="relative aspect-[3/4]">
-            <div
-              className="aspect-[3/4] rounded-lg"
-              style={{
-                backgroundImage: `url(${cocktail.image.url})`,
-                backgroundRepeat: 'no-repeat',
-                backgroundPositionX: `${cocktail.image?.offX ?? 0}px`,
-                backgroundPositionY: `${cocktail.image?.offY ?? 0}px`,
-                backgroundSize: cocktail.image?.scale ? `${cocktail.image?.scale}%` : 'cover',
-              }}
-            />
-            <div className="absolute bottom-0 left-0 right-0 rounded-bl-lg rounded-br-lg bg-gradient-to-b from-transparent to-[#00000080] px-3 pb-2 pt-6 font-medium text-white">
-              {cocktail.name}
-            </div>
-          </div>
+          <CocktailItem key={cocktail.id} cocktail={cocktail} />
         ))}
       </div>
     </div>
   );
 }
 
-type CollectionSidebarProps = {
-  selected: CocktailTagKey | 'all';
-  setSelected: StateSetter<CocktailTagKey | 'all'>;
-  disabled?: boolean;
+type CocktailItemProps = {
+  cocktail: Cocktail;
 };
-function CollectionSidebar(props: CollectionSidebarProps) {
-  const { selected, setSelected, disabled } = props;
+export function CocktailItem(props: CocktailItemProps) {
+  const { cocktail } = props;
+  const isMobile = useMediaQuery('(max-width: 768px)');
+
+  const { Root, Trigger, Content } = useMemo(() => {
+    if (isMobile) return { Root: Drawer, Trigger: DrawerTrigger, Content: DrawerContent };
+    return { Root: Sheet, Trigger: SheetTrigger, Content: SheetContent };
+  }, [isMobile]);
 
   return (
-    <div className="relative flex w-12 flex-shrink-0 flex-col bg-slate-400 py-2">
-      <div
-        key="all"
-        className={cn(
-          'relative z-10 flex w-10 rotate-180 items-center justify-center self-end px-2 py-6 vertical-writing-lr orientation-sideways-left',
-          cn({
-            'z-0 rounded-br-2xl rounded-tr-2xl bg-slate-200 text-slate-800': 'all' === selected,
-            [afterCorner]: 'all' === selected,
-            [beforeCorner]: 'all' === selected,
-          })
-        )}
-        onClick={(e: MouseEvent) => {
-          if (!disabled) {
-            e.stopPropagation();
-            setSelected('all');
-          }
-        }}
-      >
-        All
-      </div>
-      {cocktailTags.map(category => (
-        <div
-          key={category.key}
-          className={cn(
-            'relative z-10 flex w-10 rotate-180 items-center justify-center self-end px-2 py-6 vertical-writing-lr orientation-sideways-left',
-            cn({
-              'z-0 rounded-br-2xl rounded-tr-2xl bg-slate-200 text-slate-800': category.key === selected,
-              [afterCorner]: category.key === selected,
-              [beforeCorner]: category.key === selected,
-            })
-          )}
-          onClick={(e: MouseEvent) => {
-            if (!disabled) {
-              e.stopPropagation();
-              setSelected(category.key);
-            }
-          }}
-        >
-          {category.label}
-        </div>
-      ))}
-    </div>
+    <Root>
+      <Trigger>
+        <CocktailCard cocktail={cocktail} />
+      </Trigger>
+      <Content>
+        <CocktailDetails cocktail={cocktail} isMobile={isMobile} />
+      </Content>
+    </Root>
   );
 }
-
-const afterCorner = `after:absolute after:-top-8 after:left-0 after:h-8 after:w-4 after:rounded-bl-2xl after:bg-slate-400 after:shadow-[0_1rem_0_0_#e2e8f0] after:content-[""]'`;
-const beforeCorner = `before:absolute before:-bottom-8 before:left-0 before:h-8 before:w-4 before:rounded-tl-2xl before:bg-slate-400 before:shadow-[0_-1rem_0_0_#e2e8f0] before:content-[""]`;
