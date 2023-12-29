@@ -43,6 +43,12 @@ export const units = [
     amountInMillis: 0,
   },
   {
+    id: 'cube',
+    name: 'cube',
+    shortName: 'cube',
+    amountInMillis: 0,
+  },
+  {
     id: 'leaf',
     name: 'leaf',
     shortName: 'leaf',
@@ -79,7 +85,7 @@ export const ingredients = [
     name: 'Amaretto (almond liqueur)',
     description: '',
     image: {
-      url: '',
+      url: '/img/ingredients/amaretto.jpg',
       icon: {},
     },
     tagIds: [],
@@ -90,7 +96,7 @@ export const ingredients = [
     name: 'Angostura bitters',
     description: '',
     image: {
-      url: '',
+      url: '/img/ingredients/angostura-bitters.jpg',
       icon: {},
     },
     tagIds: [],
@@ -101,7 +107,7 @@ export const ingredients = [
     name: 'Benedictine',
     description: '',
     image: {
-      url: '',
+      url: '/img/ingredients/benedictine.jpg',
       icon: {},
     },
     tagIds: [],
@@ -113,7 +119,7 @@ export const ingredients = [
     name: 'Blue curacao',
     description: '',
     image: {
-      url: '',
+      url: '/img/ingredients/blue-curacao.jpg',
       icon: {},
     },
     tagIds: [],
@@ -124,7 +130,7 @@ export const ingredients = [
     name: 'Bourbon whisky',
     description: '',
     image: {
-      url: '',
+      url: '/img/ingredients/bourbon-whisky.jpg',
       icon: {},
     },
     tagIds: [],
@@ -135,7 +141,7 @@ export const ingredients = [
     name: 'Brandy',
     description: '',
     image: {
-      url: '',
+      url: '/img/ingredients/brandy.jpg',
       icon: {},
     },
     tagIds: [],
@@ -147,7 +153,7 @@ export const ingredients = [
     name: 'Campari',
     description: '',
     image: {
-      url: '',
+      url: '/img/ingredients/campari.jpg',
       icon: {},
     },
     tagIds: [],
@@ -158,7 +164,7 @@ export const ingredients = [
     name: 'Champagne',
     description: '',
     image: {
-      url: '',
+      url: '/img/ingredients/champagne.jpg',
       icon: {},
     },
     tagIds: [],
@@ -169,7 +175,7 @@ export const ingredients = [
     name: 'Coffee',
     description: '',
     image: {
-      url: '',
+      url: '/img/ingredients/coffee.jpg',
       icon: {},
     },
     tagIds: [],
@@ -180,7 +186,7 @@ export const ingredients = [
     name: 'Coffee liqueur',
     description: '',
     image: {
-      url: '',
+      url: '/img/ingredients/khalua.jpg',
       icon: {},
     },
     tagIds: [],
@@ -191,7 +197,7 @@ export const ingredients = [
     name: 'Cointreau',
     description: '',
     image: {
-      url: '',
+      url: '/img/ingredients/cointreau.jpg',
       icon: {},
     },
     tagIds: [],
@@ -202,7 +208,7 @@ export const ingredients = [
     name: 'Creme of Coconut',
     description: '',
     image: {
-      url: '',
+      url: '/img/ingredients/creme-of-coconut.jpg',
       icon: {},
     },
     tagIds: [],
@@ -213,7 +219,7 @@ export const ingredients = [
     name: 'Cucumber',
     description: '',
     image: {
-      url: '',
+      url: '/img/ingredients/cucumber.jpg',
       icon: {},
     },
     tagIds: [],
@@ -224,7 +230,7 @@ export const ingredients = [
     name: 'Dark rum',
     description: '',
     image: {
-      url: '',
+      url: '/img/ingredients/dark-rum.jpg',
       icon: {},
     },
     tagIds: [],
@@ -235,7 +241,7 @@ export const ingredients = [
     name: 'Demerara syrup',
     description: '',
     image: {
-      url: '',
+      url: '/img/ingredients/demerara-syrup.jpg',
       icon: {},
     },
     tagIds: [],
@@ -246,7 +252,7 @@ export const ingredients = [
     name: 'Dry vermouth',
     description: '',
     image: {
-      url: '',
+      url: '/img/ingredients/dry-vermouth.jpg',
       icon: {},
     },
     tagIds: [],
@@ -258,7 +264,7 @@ export const ingredients = [
     name: 'Egg white',
     description: '',
     image: {
-      url: '',
+      url: '/img/ingredients/egg-white.jpg',
       icon: {},
     },
     tagIds: [],
@@ -269,7 +275,7 @@ export const ingredients = [
     name: 'Elderflower liqueur',
     description: '',
     image: {
-      url: '',
+      url: '/img/ingredients/elderflower-liqueur.jpg',
       icon: {},
     },
     tagIds: [],
@@ -280,7 +286,7 @@ export const ingredients = [
     name: 'Gin',
     description: '',
     image: {
-      url: '',
+      url: '/img/ingredients/gin.jpg',
       icon: {},
     },
     tagIds: [],
@@ -291,7 +297,7 @@ export const ingredients = [
     name: 'Ginger beer',
     description: '',
     image: {
-      url: '',
+      url: '/img/ingredients/ginger-beer.jpg',
       icon: {},
     },
     tagIds: [],
@@ -302,7 +308,7 @@ export const ingredients = [
     name: 'Grapefruit juice',
     description: '',
     image: {
-      url: '',
+      url: '/img/ingredients/grapefruit-juice.jpg',
       icon: {},
     },
     tagIds: [],
@@ -313,7 +319,7 @@ export const ingredients = [
     name: 'Grenadine',
     description: '',
     image: {
-      url: '',
+      url: '/img/ingredients/grenadine.jpg',
       icon: {},
     },
     tagIds: [],
@@ -324,7 +330,7 @@ export const ingredients = [
     name: 'Guinness',
     description: '',
     image: {
-      url: '',
+      url: '/img/ingredients/guinness.jpg',
       icon: {},
     },
     tagIds: [],
@@ -335,7 +341,7 @@ export const ingredients = [
     name: 'Heavy cream',
     description: '',
     image: {
-      url: '',
+      url: '/img/ingredients/heavy-cream.jpg',
       icon: {},
     },
     tagIds: [],
@@ -346,7 +352,7 @@ export const ingredients = [
     name: 'Honey syrup',
     description: '',
     image: {
-      url: '',
+      url: '/img/ingredients/honey-syrup.jpg',
       icon: {},
     },
     tagIds: [],
@@ -357,7 +363,7 @@ export const ingredients = [
     name: 'Kevert',
     description: '',
     image: {
-      url: '',
+      url: '/img/ingredients/kevert.jpg',
       icon: {},
     },
     tagIds: [],
@@ -368,7 +374,7 @@ export const ingredients = [
     name: 'Lemon juice',
     description: '',
     image: {
-      url: '',
+      url: '/img/ingredients/lemon-juice.jpg',
       icon: {},
     },
     tagIds: [],
@@ -379,7 +385,7 @@ export const ingredients = [
     name: 'Lemon twist',
     description: '',
     image: {
-      url: '',
+      url: '/img/ingredients/lemon-twist.jpeg',
       icon: {},
     },
     tagIds: [],
@@ -390,7 +396,7 @@ export const ingredients = [
     name: 'Lime juice',
     description: '',
     image: {
-      url: '',
+      url: '/img/ingredients/lime-juice.jpeg',
       icon: {},
     },
     tagIds: [],
@@ -398,10 +404,10 @@ export const ingredients = [
   },
   {
     id: 'malibu',
-    name: 'Malibu',
+    name: 'Coconut liqueur',
     description: '',
     image: {
-      url: '',
+      url: '/img/ingredients/coconut-liqueur.jpg',
       icon: {},
     },
     tagIds: [],
@@ -412,7 +418,7 @@ export const ingredients = [
     name: 'Maraschino liqueur',
     description: '',
     image: {
-      url: '',
+      url: '/img/ingredients/maraschino-liqueur.png',
       icon: {},
     },
     tagIds: [],
@@ -423,7 +429,7 @@ export const ingredients = [
     name: 'Mint',
     description: '',
     image: {
-      url: '',
+      url: '/img/ingredients/mint.jpg',
       icon: {},
     },
     tagIds: [],
@@ -435,7 +441,7 @@ export const ingredients = [
     name: 'Orange bitters',
     description: '',
     image: {
-      url: '',
+      url: '/img/ingredients/orange-bitters.jpg',
       icon: {},
     },
     tagIds: [],
@@ -446,7 +452,7 @@ export const ingredients = [
     name: 'Orange juice',
     description: '',
     image: {
-      url: '',
+      url: '/img/ingredients/orange-juice.jpg',
       icon: {},
     },
     tagIds: [],
@@ -457,7 +463,7 @@ export const ingredients = [
     name: 'Orange twist',
     description: '',
     image: {
-      url: '',
+      url: '/img/ingredients/orange-twist.jpg',
       icon: {},
     },
     tagIds: [],
@@ -468,7 +474,7 @@ export const ingredients = [
     name: 'Orgeat',
     description: '',
     image: {
-      url: '',
+      url: '/img/ingredients/orgeat.jpg',
       icon: {},
     },
     tagIds: [],
@@ -479,7 +485,7 @@ export const ingredients = [
     name: 'Pinapple juice',
     description: '',
     image: {
-      url: '',
+      url: '/img/ingredients/pinapple-juice.jpg',
       icon: {},
     },
     tagIds: [],
@@ -490,7 +496,7 @@ export const ingredients = [
     name: 'Red vermouth',
     description: '',
     image: {
-      url: '',
+      url: '/img/ingredients/red-vermouth.jpg',
       icon: {},
     },
     tagIds: [],
@@ -502,7 +508,7 @@ export const ingredients = [
     name: 'Rye whisky',
     description: '',
     image: {
-      url: '',
+      url: '/img/ingredients/rye-whisky.jpg',
       icon: {},
     },
     tagIds: [],
@@ -513,7 +519,7 @@ export const ingredients = [
     name: 'Salt',
     description: '',
     image: {
-      url: '',
+      url: '/img/ingredients/salt.jpg',
       icon: {},
     },
     tagIds: [],
@@ -524,7 +530,7 @@ export const ingredients = [
     name: 'Sugar',
     description: '',
     image: {
-      url: '',
+      url: '/img/ingredients/sugar.jpg',
       icon: {},
     },
     tagIds: [],
@@ -535,7 +541,7 @@ export const ingredients = [
     name: 'Simple syrup',
     description: '',
     image: {
-      url: '',
+      url: '/img/ingredients/simple-syrup.jpeg',
       icon: {},
     },
     tagIds: [],
@@ -543,10 +549,10 @@ export const ingredients = [
   },
   {
     id: 'soda',
-    name: 'Soda',
+    name: 'Sparkling Water',
     description: '',
     image: {
-      url: '',
+      url: '/img/ingredients/sparkling-water.jpg',
       icon: {},
     },
     tagIds: [],
@@ -557,7 +563,7 @@ export const ingredients = [
     name: 'Tea Infused Gin',
     description: '',
     image: {
-      url: '',
+      url: '/img/ingredients/tea-infused-gin.jpg',
       icon: {},
     },
     tagIds: [],
@@ -568,7 +574,7 @@ export const ingredients = [
     name: 'Tequila',
     description: '',
     image: {
-      url: '',
+      url: '/img/ingredients/tequila.jpg',
       icon: {},
     },
     tagIds: [],
@@ -580,7 +586,7 @@ export const ingredients = [
     name: 'The Spice syrup',
     description: '',
     image: {
-      url: '',
+      url: '/img/ingredients/the-spice-syrup.jpg',
       icon: {},
     },
     tagIds: [],
@@ -592,7 +598,7 @@ export const ingredients = [
     name: 'Triple Sec',
     description: '',
     image: {
-      url: '',
+      url: '/img/ingredients/triple-sec.jpg',
       icon: {},
     },
     tagIds: [],
@@ -603,7 +609,7 @@ export const ingredients = [
     name: 'Violet syrup',
     description: '',
     image: {
-      url: '',
+      url: '/img/ingredients/violet-syrup.jpg',
       icon: {},
     },
     tagIds: [],
@@ -615,7 +621,7 @@ export const ingredients = [
     name: 'Vodka',
     description: '',
     image: {
-      url: '',
+      url: '/img/ingredients/vodka.jpg',
       icon: {},
     },
     tagIds: [],
@@ -626,7 +632,7 @@ export const ingredients = [
     name: 'Whipped cream',
     description: '',
     image: {
-      url: '',
+      url: '/img/ingredients/whipped-cream.jpg',
       icon: {},
     },
     tagIds: [],
@@ -637,7 +643,7 @@ export const ingredients = [
     name: 'Whisky',
     description: '',
     image: {
-      url: '',
+      url: '/img/ingredients/whisky.jpg',
       icon: {},
     },
     tagIds: [],
@@ -648,18 +654,7 @@ export const ingredients = [
     name: 'White rum',
     description: '',
     image: {
-      url: '',
-      icon: {},
-    },
-    tagIds: [],
-    possibleUnitIds: [],
-  },
-  {
-    id: 'white-rum',
-    name: 'White Rum',
-    description: '',
-    image: {
-      url: '',
+      url: '/img/ingredients/white-rum.jpg',
       icon: {},
     },
     tagIds: [],
@@ -732,7 +727,7 @@ export const cocktails: Cocktail[] = [
     ],
     tagIds: ['whisky'],
     image: {
-      url: '/img/old-fashioned.jpg',
+      url: '/img/cocktails/old-fashioned.jpg',
       card: {},
       page: {},
     },
@@ -747,7 +742,7 @@ export const cocktails: Cocktail[] = [
     ],
     tagIds: ['brandy'],
     image: {
-      url: '/img/bnb.jpg',
+      url: '/img/cocktails/bnb.jpg',
       card: { offX: -20 },
       page: { offX: -20 },
     },
@@ -763,7 +758,7 @@ export const cocktails: Cocktail[] = [
     ],
     tagIds: ['whisky'],
     image: {
-      url: '/img/manhattan.jpg',
+      url: '/img/cocktails/manhattan.jpg',
       card: { offX: 0, offY: -20 },
       page: { offX: 0, offY: -20 },
     },
@@ -780,7 +775,7 @@ export const cocktails: Cocktail[] = [
     ],
     tagIds: ['gin'],
     image: {
-      url: '/img/aviation.jpg',
+      url: '/img/cocktails/aviation.jpg',
       card: { offX: -55 },
       page: { offX: -55 },
     },
@@ -797,7 +792,7 @@ export const cocktails: Cocktail[] = [
     ],
     tagIds: ['gin'],
     image: {
-      url: '/img/earl-grey-marteani.jpg',
+      url: '/img/cocktails/earl-grey-marteani.jpg',
       card: { offX: -26, offY: -85, scale: 176 },
       page: { offX: -26, offY: -85, scale: 176 },
     },
@@ -814,7 +809,7 @@ export const cocktails: Cocktail[] = [
     ],
     tagIds: ['whisky'],
     image: {
-      url: '/img/whisky-sour.jpg',
+      url: '/img/cocktails/whisky-sour.jpg',
       card: { offX: -20 },
       page: { offX: -20 },
     },
@@ -830,7 +825,7 @@ export const cocktails: Cocktail[] = [
     ],
     tagIds: ['vodka'],
     image: {
-      url: '/img/white-russian.jpg',
+      url: '/img/cocktails/white-russian.jpg',
       card: {},
       page: {},
     },
@@ -845,7 +840,7 @@ export const cocktails: Cocktail[] = [
     ],
     tagIds: ['vodka'],
     image: {
-      url: '/img/black-russian.jpg',
+      url: '/img/cocktails/black-russian.jpg',
       card: {},
       page: {},
     },
@@ -861,7 +856,7 @@ export const cocktails: Cocktail[] = [
     ],
     tagIds: ['vodka'],
     image: {
-      url: '/img/coffee-martini.jpg',
+      url: '/img/cocktails/coffee-martini.jpg',
       card: { offY: -15 },
       page: { offY: -15 },
     },
@@ -878,7 +873,7 @@ export const cocktails: Cocktail[] = [
     ],
     tagIds: ['vodka'],
     image: {
-      url: '/img/roasted-toasted-almond.jpg',
+      url: '/img/cocktails/roasted-toasted-almond.jpg',
       card: { offX: -90 },
       page: { offX: 0 },
     },
@@ -897,7 +892,7 @@ export const cocktails: Cocktail[] = [
     ],
     tagIds: ['rum'],
     image: {
-      url: '/img/blue-hawaii.jpg',
+      url: '/img/cocktails/blue-hawaii.jpg',
       card: {},
       page: {},
     },
@@ -914,7 +909,7 @@ export const cocktails: Cocktail[] = [
     ],
     tagIds: ['rum'],
     image: {
-      url: '/img/blue-hawaiian.jpg',
+      url: '/img/cocktails/blue-hawaiian.jpg',
       card: { offX: -110 },
       page: { offX: -110 },
     },
@@ -932,7 +927,7 @@ export const cocktails: Cocktail[] = [
     ],
     tagIds: ['vodka'],
     image: {
-      url: '/img/blue-lagoon.jpg',
+      url: '/img/cocktails/blue-lagoon.jpg',
       card: {},
       page: {},
     },
@@ -949,7 +944,7 @@ export const cocktails: Cocktail[] = [
     ],
     tagIds: ['vodka'],
     image: {
-      url: '/img/blue-ocean.png',
+      url: '/img/cocktails/blue-ocean.png',
       card: {},
       page: {},
     },
@@ -965,7 +960,7 @@ export const cocktails: Cocktail[] = [
     ],
     tagIds: ['vodka'],
     image: {
-      url: '/img/blue-kamikaze.jpg',
+      url: '/img/cocktails/blue-kamikaze.jpg',
       card: { offX: -90 },
       page: { offX: -90 },
     },
@@ -980,7 +975,7 @@ export const cocktails: Cocktail[] = [
     ],
     tagIds: ['whisky'],
     image: {
-      url: '/img/godfather.jpg',
+      url: '/img/cocktails/godfather.jpg',
       card: {},
       page: {},
     },
@@ -995,7 +990,7 @@ export const cocktails: Cocktail[] = [
     ],
     tagIds: ['vodka'],
     image: {
-      url: '/img/godmother.jpg',
+      url: '/img/cocktails/godmother.jpg',
       card: { offX: -35 },
       page: { offX: -35 },
     },
@@ -1012,7 +1007,7 @@ export const cocktails: Cocktail[] = [
     ],
     tagIds: ['gin'],
     image: {
-      url: '/img/negroni.jpg',
+      url: '/img/cocktails/negroni.jpg',
       card: {},
       page: {},
     },
@@ -1030,7 +1025,7 @@ export const cocktails: Cocktail[] = [
     ],
     tagIds: ['other'],
     image: {
-      url: '/img/trinidad-sour.jpg',
+      url: '/img/cocktails/trinidad-sour.jpg',
       card: {},
       page: {},
     },
@@ -1045,7 +1040,7 @@ export const cocktails: Cocktail[] = [
     ],
     tagIds: ['other'],
     image: {
-      url: '/img/kevert-soda.jpeg',
+      url: '/img/cocktails/kevert-soda.jpeg',
       card: { offX: -40 },
       page: { offY: -60 },
     },
@@ -1061,7 +1056,7 @@ export const cocktails: Cocktail[] = [
     ],
     tagIds: ['rum'],
     image: {
-      url: '/img/pina-colada.jpg',
+      url: '/img/cocktails/pina-colada.jpg',
       card: {},
       page: {},
     },
@@ -1080,7 +1075,7 @@ export const cocktails: Cocktail[] = [
     ],
     tagIds: ['rum'],
     image: {
-      url: '/img/mai-tai.jpg',
+      url: '/img/cocktails/mai-tai.jpg',
       card: {},
       page: {},
     },
@@ -1096,7 +1091,7 @@ export const cocktails: Cocktail[] = [
     ],
     tagIds: ['tequila'],
     image: {
-      url: '/img/tequila-sunrise.jpg',
+      url: '/img/cocktails/tequila-sunrise.jpg',
       card: { offX: -25 },
       page: { offX: -25 },
     },
@@ -1114,7 +1109,7 @@ export const cocktails: Cocktail[] = [
     ],
     tagIds: ['vodka'],
     image: {
-      url: '/img/paloma.jpg',
+      url: '/img/cocktails/paloma.jpg',
       card: { offX: -20 },
       page: { offX: -20 },
     },
@@ -1130,7 +1125,7 @@ export const cocktails: Cocktail[] = [
     ],
     tagIds: ['rum'],
     image: {
-      url: '/img/daiquiri.jpg',
+      url: '/img/cocktails/daiquiri.jpg',
       card: { offX: -110 },
       page: { offX: -110 },
     },
@@ -1146,7 +1141,7 @@ export const cocktails: Cocktail[] = [
     ],
     tagIds: ['rum'],
     image: {
-      url: '/img/dark-daiquiri.png',
+      url: '/img/cocktails/dark-daiquiri.png',
       card: { offX: -70, offY: -15, scale: 140 },
       page: { offX: -110 },
     },
@@ -1165,7 +1160,7 @@ export const cocktails: Cocktail[] = [
     ],
     tagIds: ['gin'],
     image: {
-      url: '/img/white-lady.jpg',
+      url: '/img/cocktails/white-lady.jpg',
       card: {},
       page: {},
     },
@@ -1182,7 +1177,7 @@ export const cocktails: Cocktail[] = [
     ],
     tagIds: ['vodka'],
     image: {
-      url: '/img/ivy-gimlet.jpg',
+      url: '/img/cocktails/ivy-gimlet.jpg',
       card: { offX: -30, offY: -65, scale: 125 },
       page: { offX: -30, offY: -65, scale: 125 },
     },
@@ -1199,7 +1194,7 @@ export const cocktails: Cocktail[] = [
     ],
     tagIds: ['gin'],
     image: {
-      url: '/img/southside.jpg',
+      url: '/img/cocktails/southside.jpg',
       card: { offX: -17, offY: -7, scale: 150 },
       page: { offX: -17, offY: -7, scale: 150 },
     },
@@ -1217,7 +1212,7 @@ export const cocktails: Cocktail[] = [
     ],
     tagIds: ['gin'],
     image: {
-      url: '/img/eastside.jpg',
+      url: '/img/cocktails/eastside.jpg',
       card: { offX: -10, offY: -15, scale: 150 },
       page: { offX: -10, offY: -15, scale: 150 },
     },
@@ -1233,7 +1228,7 @@ export const cocktails: Cocktail[] = [
     ],
     tagIds: ['gin'],
     image: {
-      url: '/img/bees-knees.jpg',
+      url: '/img/cocktails/bees-knees.jpg',
       card: { offX: -20, offY: -70, scale: 150 },
       page: { offX: -20, offY: -70, scale: 150 },
     },
@@ -1250,7 +1245,7 @@ export const cocktails: Cocktail[] = [
     ],
     tagIds: ['rum'],
     image: {
-      url: '/img/dark-n-stormy.jpg',
+      url: '/img/cocktails/dark-n-stormy.jpg',
       card: { offX: -10 },
       page: { offX: -10 },
     },
@@ -1268,7 +1263,7 @@ export const cocktails: Cocktail[] = [
     ],
     tagIds: ['rum'],
     image: {
-      url: '/img/ambrosia.jpg',
+      url: '/img/cocktails/ambrosia.jpg',
       card: { offX: -20, offY: -40, scale: 130 },
       page: { offX: -20, offY: -40, scale: 130 },
     },
@@ -1286,7 +1281,7 @@ export const cocktails: Cocktail[] = [
     ],
     tagIds: ['whisky'],
     image: {
-      url: '/img/dune-spice-coffee.png',
+      url: '/img/cocktails/dune-spice-coffee.png',
       card: { offX: -130 },
       page: { offX: -130 },
     },
@@ -1303,7 +1298,7 @@ export const cocktails: Cocktail[] = [
     ],
     tagIds: ['tequila'],
     image: {
-      url: '/img/margarita.jpg',
+      url: '/img/cocktails/margarita.jpg',
       card: { offX: -20 },
       page: { offX: -20 },
     },
@@ -1319,7 +1314,7 @@ export const cocktails: Cocktail[] = [
     ],
     tagIds: ['gin'],
     image: {
-      url: '/img/martini.jpg',
+      url: '/img/cocktails/martini.jpg',
       card: { offX: -40, offY: 0 },
       page: { offX: -40, offY: 0 },
     },
@@ -1337,7 +1332,7 @@ export const cocktails: Cocktail[] = [
     ],
     tagIds: ['brandy'],
     image: {
-      url: '/img/sidecar.jpg',
+      url: '/img/cocktails/sidecar.jpg',
       card: { offX: -10 },
       page: { offX: -10 },
     },
@@ -1354,7 +1349,7 @@ export const cocktails: Cocktail[] = [
     ],
     tagIds: ['brandy'],
     image: {
-      url: '/img/between-the-sheets.jpg',
+      url: '/img/cocktails/between-the-sheets.jpg',
       card: { offX: -10 },
       page: { offX: -10 },
     },
@@ -1364,13 +1359,14 @@ export const cocktails: Cocktail[] = [
     name: 'Champagne Cocktail',
     description: '',
     recipe: [
-      { ingredientId: 'vodka', unitId: 'ml', amount: 50 },
-      { ingredientId: 'blue-curacao', unitId: 'ml', amount: 50 },
-      { ingredientId: 'lime-juice', unitId: 'ml', amount: 50 },
+      { ingredientId: 'champagne', unitId: 'ml', amount: 200 },
+      { ingredientId: 'brandy', unitId: 'ml', amount: 40, optional: true },
+      { ingredientId: 'angostura-bitters', unitId: 'dash', amount: 6 },
+      { ingredientId: 'sugar', unitId: 'cube', amount: 1 },
     ],
     tagIds: ['other'],
     image: {
-      url: '/img/champagne-cocktail.jpg',
+      url: '/img/cocktails/champagne-cocktail.jpg',
       card: { offX: -70 },
       page: { offX: 0 },
     },
@@ -1380,12 +1376,12 @@ export const cocktails: Cocktail[] = [
     name: 'Black Velvet',
     description: '',
     recipe: [
-      { ingredientId: 'champagne', unitId: 'ml', amount: 60 },
-      { ingredientId: 'guinness', unitId: 'ml', amount: 60 },
+      { ingredientId: 'champagne', unitId: 'ml', amount: 100 },
+      { ingredientId: 'guinness', unitId: 'ml', amount: 100 },
     ],
     tagIds: ['other'],
     image: {
-      url: '/img/black-velvet.jpg',
+      url: '/img/cocktails/black-velvet.jpg',
       card: { offX: -90 },
       page: { offX: 0 },
     },
