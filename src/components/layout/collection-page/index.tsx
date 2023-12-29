@@ -24,14 +24,14 @@ export function CollectionPage(props: CollectionPageProps) {
   return (
     <div
       className={cn(
-        'mx-1 flex max-h-[calc(100vh-64px)] w-full flex-shrink-0 flex-row overflow-x-hidden rounded-tl-xl rounded-tr-xl bg-slate-200 opacity-50',
+        'mx-1 flex max-h-[calc(100vh-64px)] w-full flex-shrink-0 flex-row overflow-x-hidden bg-slate-200 opacity-50',
         { 'absolute inset-0 mx-0 max-h-screen opacity-100': active }
       )}
       style={{}}
       // onClick={() => setActive((prev) => !prev)}
     >
       <CollectionSidebar selected={category} setSelected={setCategory} disabled={!active} />
-      <div className="grid flex-1 flex-shrink-0 grid-cols-2 grid-rows-[min-content] gap-2 overflow-x-auto p-2 text-slate-800">
+      <div className="grid flex-1 flex-shrink-0 auto-rows-min grid-cols-2 gap-2 overflow-x-auto p-2 text-slate-800">
         {filteredCocktails.map(cocktail => (
           <div key={cocktail.id} className="relative aspect-[3/4]">
             <div
@@ -67,7 +67,7 @@ function CollectionSidebar(props: CollectionSidebarProps) {
       <div
         key="all"
         className={cn(
-          'vertical-writing-lr orientation-sideways-left relative z-10 flex w-10 rotate-180 items-center justify-center self-end px-2 py-6',
+          'relative z-10 flex w-10 rotate-180 items-center justify-center self-end px-2 py-6 vertical-writing-lr orientation-sideways-left',
           cn({
             'z-0 rounded-br-2xl rounded-tr-2xl bg-slate-200 text-slate-800': 'all' === selected,
             [afterCorner]: 'all' === selected,
@@ -87,7 +87,7 @@ function CollectionSidebar(props: CollectionSidebarProps) {
         <div
           key={category.key}
           className={cn(
-            'vertical-writing-lr orientation-sideways-left relative z-10 flex w-10 rotate-180 items-center justify-center self-end px-2 py-6',
+            'relative z-10 flex w-10 rotate-180 items-center justify-center self-end px-2 py-6 vertical-writing-lr orientation-sideways-left',
             cn({
               'z-0 rounded-br-2xl rounded-tr-2xl bg-slate-200 text-slate-800': category.key === selected,
               [afterCorner]: category.key === selected,
