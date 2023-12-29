@@ -1,7 +1,10 @@
 import { type MouseEvent } from 'react';
+import { QrCode } from 'lucide-react';
+
 import type { StateSetter } from '~/types/common';
 import { cn } from '~/utils/cn';
 import { cocktailGroups } from '~/model/data/populated';
+import { Dialog, DialogContent, DialogTrigger } from '~/components/layout/dialog';
 
 type CollectionSidebarProps = {
   selected: string;
@@ -12,7 +15,7 @@ export function CollectionSidebar(props: CollectionSidebarProps) {
   const { selected, setSelected, disabled } = props;
 
   return (
-    <div className="relative flex w-12 flex-shrink-0 flex-col bg-slate-400 py-2">
+    <div className="relative flex w-12 flex-shrink-0 flex-col items-center bg-slate-400 py-2">
       <div
         key="all"
         className={cn(
@@ -53,6 +56,14 @@ export function CollectionSidebar(props: CollectionSidebarProps) {
           {category.label}
         </div>
       ))}
+      <Dialog>
+        <DialogTrigger className="mt-auto flex h-8 w-8 items-center justify-center rounded-full bg-slate-200 active:bg-slate-300">
+          <QrCode width={20} />
+        </DialogTrigger>
+        <DialogContent>
+          <img src="/qrcode.png" alt="QR code of https://dionysus.club" />
+        </DialogContent>
+      </Dialog>
     </div>
   );
 }

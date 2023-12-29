@@ -17,14 +17,16 @@
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
+  @apply text-slate-900;
+  @apply bg-slate-100;
 }
 
-@media (prefers-color-scheme: light) {
+/* @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    @apply text-slate-100;
+    @apply bg-slate-900;
   }
-}
+} */
 
 #root {
   width: 100vw;

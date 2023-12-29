@@ -3,8 +3,8 @@ import { useState, useMemo } from 'react';
 import { type Cocktail } from '~/model/types/mvp';
 import { populatedCocktails } from '~/model/data/populated';
 import { useMediaQuery } from '~/utils/hooks/useMediaQuery';
-import { Drawer, DrawerContent, DrawerTrigger } from '~/components/drawer';
-import { Sheet, SheetContent, SheetTrigger } from '~/components/sheet';
+import { Drawer, DrawerContent, DrawerTrigger } from '~/components/layout/drawer';
+import { Sheet, SheetContent, SheetTrigger } from '~/components/layout/sheet';
 
 import { CollectionSidebar } from './sidebar';
 import { CocktailCard } from './card';

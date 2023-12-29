@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
-import { DrawerHeader, DrawerTitle } from '~/components/drawer';
-import { SheetHeader, SheetTitle } from '~/components/sheet';
+import { DrawerHeader, DrawerTitle } from '~/components/layout/drawer';
+import { SheetHeader, SheetTitle } from '~/components/layout/sheet';
 import { Cocktail } from '~/model/types/mvp';
 
 type CocktailDetailsProps = {
