@@ -2,14 +2,13 @@ import { useState, useMemo } from 'react';
 
 import { type Cocktail } from '~/model/types/mvp';
 import { type CocktailTagKey, cocktails } from '~/model/data/mvp';
-import { cn } from '~/utils/cn';
 import { useMediaQuery } from '~/utils/hooks/useMediaQuery';
 import { Drawer, DrawerContent, DrawerTrigger } from '~/components/drawer';
+import { Sheet, SheetContent, SheetTrigger } from '~/components/sheet';
 
 import { CollectionSidebar } from './sidebar';
 import { CocktailCard } from './card';
 import { CocktailDetails } from './details';
-import { Sheet, SheetContent, SheetTrigger } from '~/components/sheet';
 
 type CollectionPageProps = {
   active: boolean;
@@ -29,13 +28,7 @@ export function CollectionPage(props: CollectionPageProps) {
   );
 
   return (
-    <div
-      className={cn(
-        'mx-1 flex max-h-[calc(100vh-64px)] w-full flex-shrink-0 flex-row overflow-x-hidden bg-slate-200 opacity-50',
-        { 'absolute inset-0 mx-0 max-h-full opacity-100': active }
-      )}
-      style={{}}
-    >
+    <div className="flex h-screen max-h-screen w-full flex-shrink-0 flex-row overflow-x-hidden bg-slate-200">
       <CollectionSidebar selected={category} setSelected={setCategory} disabled={!active} />
       <div className="grid flex-1 flex-shrink-0 auto-rows-min grid-cols-2 gap-2 overflow-x-auto p-2 text-slate-800 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
         {filteredCocktails.map(cocktail => (
