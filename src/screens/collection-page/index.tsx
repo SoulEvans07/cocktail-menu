@@ -1,7 +1,7 @@
 import { useState, useMemo } from 'react';
 
 import { type Cocktail } from '~/model/types/mvp';
-import { type CocktailTagKey, cocktails } from '~/model/data/mvp';
+import { populatedCocktails } from '~/model/data/populated';
 import { useMediaQuery } from '~/utils/hooks/useMediaQuery';
 import { Drawer, DrawerContent, DrawerTrigger } from '~/components/drawer';
 import { Sheet, SheetContent, SheetTrigger } from '~/components/sheet';
@@ -17,15 +17,13 @@ type CollectionPageProps = {
 export function CollectionPage(props: CollectionPageProps) {
   const { active } = props;
 
-  const [category, setCategory] = useState<CocktailTagKey | 'all'>('all');
-  const filteredCocktails = useMemo(
-    () =>
-      cocktails.filter(c => {
-        if (category === 'all') return true;
-        return c.tagKeys.includes(category);
-      }),
-    [cocktails, category]
-  );
+  const [category, setCategory] = useState<string | 'all'>('all');
+  const filteredCocktails = useMemo(() => {
+    return populatedCocktails.filter(c => {
+      if (category === 'all') return true;
+      return c.tagIds.includes(category);
+    });
+  }, [populatedCocktails, category]);
 
   return (
     <div className="flex h-screen max-h-screen w-full flex-shrink-0 flex-row overflow-x-hidden bg-slate-200">

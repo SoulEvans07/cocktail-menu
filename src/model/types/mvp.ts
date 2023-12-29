@@ -11,7 +11,7 @@ export type Image<Variants extends string | never = never> = {
 };
 
 export interface Tag {
-  key: string;
+  id: string;
   label: string;
   group: string;
 }
@@ -28,11 +28,12 @@ export interface Ingredient {
   id: string;
   name: string;
   description: string;
-  tagKeys: Tag['key'][];
+  tagIds: Tag['id'][];
   tags?: Tag[];
   image: Image<'icon'>;
   possibleUnitIds: Unit['id'][];
   possibleUnits?: Unit[];
+  missing?: boolean;
 }
 
 export interface RecipeItem {
@@ -51,7 +52,7 @@ export interface Cocktail {
   description: string;
   recipe: RecipeItem[];
   image: Image<'card' | 'page'>;
-  tagKeys: Tag['key'][];
+  tagIds: Tag['id'][];
   tags?: Tag[];
   // glassShape?: string; P4: add glass shape
 }

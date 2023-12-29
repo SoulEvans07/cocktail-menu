@@ -1,11 +1,11 @@
 import { type MouseEvent } from 'react';
 import type { StateSetter } from '~/types/common';
 import { cn } from '~/utils/cn';
-import { type CocktailTagKey, cocktailTags } from '~/model/data/mvp';
+import { cocktailGroups } from '~/model/data/populated';
 
 type CollectionSidebarProps = {
-  selected: CocktailTagKey | 'all';
-  setSelected: StateSetter<CocktailTagKey | 'all'>;
+  selected: string;
+  setSelected: StateSetter<string | 'all'>;
   disabled?: boolean;
 };
 export function CollectionSidebar(props: CollectionSidebarProps) {
@@ -32,21 +32,21 @@ export function CollectionSidebar(props: CollectionSidebarProps) {
       >
         All
       </div>
-      {cocktailTags.map(category => (
+      {cocktailGroups.map(category => (
         <div
-          key={category.key}
+          key={category.id}
           className={cn(
             'relative z-10 flex w-10 rotate-180 items-center justify-center self-end px-2 py-6 vertical-writing-lr orientation-sideways-left',
             cn({
-              'z-0 rounded-br-2xl rounded-tr-2xl bg-slate-200 text-slate-800': category.key === selected,
-              [afterCorner]: category.key === selected,
-              [beforeCorner]: category.key === selected,
+              'z-0 rounded-br-2xl rounded-tr-2xl bg-slate-200 text-slate-800': category.id === selected,
+              [afterCorner]: category.id === selected,
+              [beforeCorner]: category.id === selected,
             })
           )}
           onClick={(e: MouseEvent) => {
             if (!disabled) {
               e.stopPropagation();
-              setSelected(category.key);
+              setSelected(category.id);
             }
           }}
         >
