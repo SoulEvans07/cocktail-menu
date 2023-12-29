@@ -44,7 +44,7 @@ type CocktailItemProps = {
 };
 export function CocktailItem(props: CocktailItemProps) {
   const { cocktail } = props;
-  const isMobile = useMediaQuery('(max-width: 768px)');
+  const isMobile = useMediaQuery('(max-width: 640px)');
 
   const { Root, Trigger, Content } = useMemo(() => {
     if (isMobile) return { Root: Drawer, Trigger: DrawerTrigger, Content: DrawerContent };
