@@ -729,7 +729,7 @@ export const cocktails: Cocktail[] = [
     image: {
       url: '/img/cocktails/old-fashioned.jpg',
       card: {},
-      page: {},
+      page: { offY: -50 },
     },
   },
   {
@@ -794,7 +794,7 @@ export const cocktails: Cocktail[] = [
     image: {
       url: '/img/cocktails/earl-grey-marteani.jpg',
       card: { offX: -26, offY: -85, scale: 176 },
-      page: { offX: -26, offY: -85, scale: 176 },
+      page: { offX: 0, offY: -200, scale: 100 },
     },
   },
   {
@@ -811,7 +811,7 @@ export const cocktails: Cocktail[] = [
     image: {
       url: '/img/cocktails/whisky-sour.jpg',
       card: { offX: -20 },
-      page: { offX: -20 },
+      page: { offY: -40 },
     },
   },
   {
@@ -842,7 +842,7 @@ export const cocktails: Cocktail[] = [
     image: {
       url: '/img/cocktails/black-russian.jpg',
       card: {},
-      page: {},
+      page: { offY: -35 },
     },
   },
   {
@@ -858,7 +858,7 @@ export const cocktails: Cocktail[] = [
     image: {
       url: '/img/cocktails/coffee-martini.jpg',
       card: { offY: -15 },
-      page: { offY: -15 },
+      page: { offY: -70 },
     },
   },
   {
@@ -875,7 +875,7 @@ export const cocktails: Cocktail[] = [
     image: {
       url: '/img/cocktails/roasted-toasted-almond.jpg',
       card: { offX: -90 },
-      page: { offX: 0 },
+      page: {},
     },
   },
   {
@@ -911,7 +911,7 @@ export const cocktails: Cocktail[] = [
     image: {
       url: '/img/cocktails/blue-hawaiian.jpg',
       card: { offX: -110 },
-      page: { offX: -110 },
+      page: { offX: 0 },
     },
   },
   {
@@ -962,7 +962,7 @@ export const cocktails: Cocktail[] = [
     image: {
       url: '/img/cocktails/blue-kamikaze.jpg',
       card: { offX: -90 },
-      page: { offX: -90 },
+      page: {},
     },
   },
   {
@@ -992,7 +992,7 @@ export const cocktails: Cocktail[] = [
     image: {
       url: '/img/cocktails/godmother.jpg',
       card: { offX: -35 },
-      page: { offX: -35 },
+      page: {},
     },
   },
   {
@@ -1058,7 +1058,7 @@ export const cocktails: Cocktail[] = [
     image: {
       url: '/img/cocktails/pina-colada.jpg',
       card: {},
-      page: {},
+      page: { offY: -80 },
     },
   },
   {
@@ -1111,7 +1111,7 @@ export const cocktails: Cocktail[] = [
     image: {
       url: '/img/cocktails/paloma.jpg',
       card: { offX: -20 },
-      page: { offX: -20 },
+      page: {},
     },
   },
   {
@@ -1127,7 +1127,7 @@ export const cocktails: Cocktail[] = [
     image: {
       url: '/img/cocktails/daiquiri.jpg',
       card: { offX: -110 },
-      page: { offX: -110 },
+      page: {},
     },
   },
   {
@@ -1143,7 +1143,7 @@ export const cocktails: Cocktail[] = [
     image: {
       url: '/img/cocktails/dark-daiquiri.png',
       card: { offX: -70, offY: -15, scale: 140 },
-      page: { offX: -110 },
+      page: {},
     },
   },
   {
@@ -1230,7 +1230,7 @@ export const cocktails: Cocktail[] = [
     image: {
       url: '/img/cocktails/bees-knees.jpg',
       card: { offX: -20, offY: -70, scale: 150 },
-      page: { offX: -20, offY: -70, scale: 150 },
+      page: { offY: -140, scale: 100 },
     },
   },
   {
@@ -1247,7 +1247,7 @@ export const cocktails: Cocktail[] = [
     image: {
       url: '/img/cocktails/dark-n-stormy.jpg',
       card: { offX: -10 },
-      page: { offX: -10 },
+      page: {},
     },
   },
   {
@@ -1383,7 +1383,7 @@ export const cocktails: Cocktail[] = [
     image: {
       url: '/img/cocktails/black-velvet.jpg',
       card: { offX: -90 },
-      page: { offX: 0 },
+      page: { offX: -20, offY: -10, scale: 120 },
     },
   },
 ] satisfies MockCocktail[];
