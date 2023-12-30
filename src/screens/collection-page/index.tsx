@@ -1,6 +1,6 @@
 import { useState, useMemo } from 'react';
 
-import { type Cocktail } from '~/model/types/mvp';
+import type { PopulatedCocktail } from '~/model/types/populated';
 import { populatedCocktails } from '~/model/data/populated';
 import { useMediaQuery } from '~/utils/hooks/useMediaQuery';
 import { Drawer, DrawerContent, DrawerTrigger } from '~/components/layout/drawer';
@@ -38,7 +38,7 @@ export function CollectionPage(props: CollectionPageProps) {
 }
 
 type CocktailItemProps = {
-  cocktail: Cocktail;
+  cocktail: PopulatedCocktail;
 };
 export function CocktailItem(props: CocktailItemProps) {
   const { cocktail } = props;
