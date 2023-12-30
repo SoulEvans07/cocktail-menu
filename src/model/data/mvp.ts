@@ -146,7 +146,7 @@ export const ingredients = [
     },
     tagIds: [],
     possibleUnitIds: [],
-    missing: true,
+    missing: false,
   },
   {
     id: 'campari',
@@ -1142,7 +1142,7 @@ export const cocktails: Cocktail[] = [
     tagIds: ['rum'],
     image: {
       url: '/img/cocktails/dark-daiquiri.png',
-      card: { offX: -70, offY: -15, scale: 140 },
+      card: { offX: -40, offY: -15, scale: 140 },
       page: {},
     },
   },
@@ -1334,7 +1334,7 @@ export const cocktails: Cocktail[] = [
     image: {
       url: '/img/cocktails/sidecar.jpg',
       card: { offX: -10 },
-      page: { offX: -10 },
+      page: {},
     },
   },
   {
@@ -1351,7 +1351,7 @@ export const cocktails: Cocktail[] = [
     image: {
       url: '/img/cocktails/between-the-sheets.jpg',
       card: { offX: -10 },
-      page: { offX: -10 },
+      page: {},
     },
   },
   {
@@ -1367,7 +1367,7 @@ export const cocktails: Cocktail[] = [
     tagIds: ['other'],
     image: {
       url: '/img/cocktails/champagne-cocktail.jpg',
-      card: { offX: -70 },
+      card: { offX: -30 },
       page: { offX: 0 },
     },
   },
