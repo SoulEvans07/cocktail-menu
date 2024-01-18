@@ -1051,7 +1051,7 @@ export const cocktails: Cocktail[] = [
     description: '',
     recipe: [
       { ingredientId: 'white-rum', unitId: 'ml', amount: 60 },
-      { ingredientId: 'pinapple-juice', unitId: 'ml', amount: 60 },
+      { ingredientId: 'pinapple-juice', unitId: 'ml', amount: 120 },
       { ingredientId: 'creme-of-coconut', unitId: 'ml', amount: 30 },
     ],
     tagIds: ['rum'],
