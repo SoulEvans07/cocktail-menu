@@ -53,6 +53,7 @@ export default {
       boxShadow: {
         'corner-left': `0 1rem 0 0 ${colors.indigo['100']}`,
         'corner-right': `0 -1rem 0 0 ${colors.indigo['100']}`,
+        'custom-card': `0 1px 6px 0px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)`,
       },
     },
   },

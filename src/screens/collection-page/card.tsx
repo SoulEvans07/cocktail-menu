@@ -7,7 +7,7 @@ export function CocktailCard(props: CocktailCardProps) {
   const { cocktail } = props;
 
   return (
-    <div className="relative aspect-[3/4] text-left">
+    <div className="shadow-custom-card relative aspect-[3/4] rounded-lg text-left">
       <div
         className="aspect-[3/4] rounded-lg"
         style={{
