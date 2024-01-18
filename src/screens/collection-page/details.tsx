@@ -48,7 +48,7 @@ export function CocktailDetails(props: CocktailDetailsProps) {
             />
             <div className="ingredient-name flex flex-col">
               <span>{item.ingredient.name}</span>
-              <span className="ingredient-modifier text-xs text-slate-400">
+              <span className="ingredient-modifier text-xs text-indigo-400">
                 {!!item.optional && ' (optional)'}
                 {!!item.garnish && ' (garnish)'}
               </span>
@@ -56,7 +56,7 @@ export function CocktailDetails(props: CocktailDetailsProps) {
             {!item.garnish && (
               <>
                 <span className="ingredient-amount ml-auto">{item.amount}</span>
-                <span className="ingredient-unit ml-1 text-slate-400">{item.unit.shortName}</span>
+                <span className="ingredient-unit ml-1 text-indigo-400">{item.unit.shortName}</span>
               </>
             )}
           </div>

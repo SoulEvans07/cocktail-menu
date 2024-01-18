@@ -25,7 +25,7 @@ export const SheetOverlay = forwardRef<
     <SheetPrimitive.Overlay
       ref={ref}
       className={cn(
-        'sheet-overlay data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0  fixed inset-0 z-50 bg-black/80',
+        'sheet-overlay fixed inset-0 z-50 bg-black/80  data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0',
         className
       )}
       {...rest}
@@ -35,7 +35,7 @@ export const SheetOverlay = forwardRef<
 SheetOverlay.displayName = SheetPrimitive.Overlay.displayName;
 
 const sheetVariants = cva(
-  'sheet-content fixed z-50 gap-4 bg-slate-200 shadow-lg transition ease-in-out data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:duration-300 data-[state=open]:duration-500',
+  'sheet-content fixed z-50 gap-4 bg-indigo-100 shadow-lg transition ease-in-out data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:duration-300 data-[state=open]:duration-500',
   {
     variants: {
       side: {
@@ -62,7 +62,7 @@ export const SheetContent = forwardRef<React.ElementRef<typeof SheetPrimitive.Co
         <SheetOverlay />
         <SheetPrimitive.Content ref={ref} className={cn(sheetVariants({ side }), className)} {...rest}>
           {children}
-          <SheetPrimitive.Close className="sheet-close absolute right-4 top-4 rounded-sm opacity-70 ring-offset-slate-300 transition-opacity hover:opacity-100 disabled:pointer-events-none data-[state=open]:bg-slate-500">
+          <SheetPrimitive.Close className="sheet-close absolute right-4 top-4 rounded-sm opacity-70 ring-offset-indigo-300 transition-opacity hover:opacity-100 disabled:pointer-events-none data-[state=open]:bg-indigo-500">
             <X className="h-4 w-4 mix-blend-difference" />
             <span className="sr-only mix-blend-difference">Close</span>
           </SheetPrimitive.Close>
@@ -98,7 +98,7 @@ export const SheetTitle = forwardRef<
   return (
     <SheetPrimitive.Title
       ref={ref}
-      className={cn('sheet-title px-3 text-lg font-semibold text-slate-900', className)}
+      className={cn('sheet-title px-3 text-lg font-semibold text-indigo-900', className)}
       {...rest}
     />
   );
@@ -113,7 +113,7 @@ export const SheetDescription = forwardRef<
   return (
     <SheetPrimitive.Description
       ref={ref}
-      className={cn('sheet-description text-sm text-slate-700', className)}
+      className={cn('sheet-description text-sm text-indigo-700', className)}
       {...rest}
     />
   );

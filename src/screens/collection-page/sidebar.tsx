@@ -1,5 +1,6 @@
 import { type MouseEvent } from 'react';
 import { QrCode } from 'lucide-react';
+import colors from 'tailwindcss/colors';
 
 import type { StateSetter } from '~/types/common';
 import { cn } from '~/utils/cn';
@@ -15,13 +16,13 @@ export function CollectionSidebar(props: CollectionSidebarProps) {
   const { selected, setSelected, disabled } = props;
 
   return (
-    <div className="relative flex w-12 flex-shrink-0 flex-col items-center bg-slate-400 py-2">
+    <div className="relative flex w-12 flex-shrink-0 flex-col items-center bg-indigo-400 py-2">
       <div
         key="all"
         className={cn(
           'relative z-10 flex w-10 rotate-180 items-center justify-center self-end px-2 py-6 vertical-writing-lr orientation-sideways-left',
           cn({
-            'z-0 rounded-br-2xl rounded-tr-2xl bg-slate-200 text-slate-800': 'all' === selected,
+            'z-0 rounded-br-2xl rounded-tr-2xl bg-indigo-100 text-indigo-800': 'all' === selected,
             [afterCorner]: 'all' === selected,
             [beforeCorner]: 'all' === selected,
           })
@@ -41,7 +42,7 @@ export function CollectionSidebar(props: CollectionSidebarProps) {
           className={cn(
             'relative z-10 flex w-10 rotate-180 items-center justify-center self-end px-2 py-6 vertical-writing-lr orientation-sideways-left',
             cn({
-              'z-0 rounded-br-2xl rounded-tr-2xl bg-slate-200 text-slate-800': category.id === selected,
+              'z-0 rounded-br-2xl rounded-tr-2xl bg-indigo-100 text-indigo-800': category.id === selected,
               [afterCorner]: category.id === selected,
               [beforeCorner]: category.id === selected,
             })
@@ -57,7 +58,7 @@ export function CollectionSidebar(props: CollectionSidebarProps) {
         </div>
       ))}
       <Dialog>
-        <DialogTrigger className="mt-auto flex h-8 w-8 items-center justify-center rounded-full bg-slate-200 active:bg-slate-300">
+        <DialogTrigger className="mt-auto flex h-8 w-8 items-center justify-center rounded-full bg-indigo-200 active:bg-indigo-300">
           <QrCode width={20} />
         </DialogTrigger>
         <DialogContent>
@@ -68,5 +69,5 @@ export function CollectionSidebar(props: CollectionSidebarProps) {
   );
 }
 
-const afterCorner = `after:absolute after:-top-8 after:left-0 after:h-8 after:w-4 after:rounded-bl-2xl after:bg-slate-400 after:shadow-[0_1rem_0_0_#e2e8f0] after:content-[""]'`;
-const beforeCorner = `before:absolute before:-bottom-8 before:left-0 before:h-8 before:w-4 before:rounded-tl-2xl before:bg-slate-400 before:shadow-[0_-1rem_0_0_#e2e8f0] before:content-[""]`;
+const afterCorner = `after:absolute after:-top-8 after:left-0 after:h-8 after:w-4 after:rounded-bl-2xl after:bg-indigo-400 after:shadow-corner-left after:content-[""]'`;
+const beforeCorner = `before:absolute before:-bottom-8 before:left-0 before:h-8 before:w-4 before:rounded-tl-2xl before:bg-indigo-400 before:shadow-corner-right before:content-[""]`;

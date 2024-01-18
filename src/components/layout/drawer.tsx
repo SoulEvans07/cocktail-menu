@@ -45,12 +45,12 @@ export const DrawerContent = forwardRef<
       <DrawerPrimitive.Content
         ref={ref}
         className={cn(
-          'drawer-content fixed inset-x-0 bottom-0 z-50 mt-24 flex h-auto flex-col rounded-t-2xl bg-slate-200',
+          'drawer-content fixed inset-x-0 bottom-0 z-50 mt-24 flex h-auto flex-col rounded-t-2xl bg-indigo-100',
           className
         )}
         {...rest}
       >
-        <div className="drawer-handle absolute left-1/2 top-4 h-2 w-[100px] -translate-x-1/2 rounded-full bg-slate-400/60" />
+        <div className="drawer-handle absolute left-1/2 top-4 h-2 w-[100px] -translate-x-1/2 rounded-full bg-indigo-600/60" />
         {children}
       </DrawerPrimitive.Content>
     </DrawerPortal>
@@ -98,7 +98,7 @@ export const DrawerDescription = forwardRef<
   return (
     <DrawerPrimitive.Description
       ref={ref}
-      className={cn('drawer-description text-muted-foreground text-sm', className)}
+      className={cn('drawer-description text-sm text-muted-foreground', className)}
       {...rest}
     />
   );

@@ -26,9 +26,9 @@ export function CollectionPage(props: CollectionPageProps) {
   }, [populatedCocktails, category]);
 
   return (
-    <div className="flex h-screen max-h-screen w-full flex-shrink-0 flex-row overflow-x-hidden bg-slate-200">
+    <div className="flex h-screen max-h-screen w-full flex-shrink-0 flex-row overflow-x-hidden bg-indigo-100">
       <CollectionSidebar selected={category} setSelected={setCategory} disabled={!active} />
-      <div className="grid flex-1 flex-shrink-0 auto-rows-min grid-cols-2 gap-2 overflow-x-auto p-2 text-slate-800 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
+      <div className="grid flex-1 flex-shrink-0 auto-rows-min grid-cols-2 gap-2 overflow-x-auto p-2 text-indigo-800 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
         {filteredCocktails.map(cocktail => (
           <CocktailItem key={cocktail.id} cocktail={cocktail} />
         ))}

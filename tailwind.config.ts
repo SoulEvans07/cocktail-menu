@@ -1,9 +1,11 @@
 import { type Config } from 'tailwindcss';
 import { fontFamily } from 'tailwindcss/defaultTheme';
+import colors from 'tailwindcss/colors';
 import plugin from 'tailwindcss/plugin';
 import animations from 'tailwindcss-animate';
 
 export default {
+  mode: 'jit',
   content: ['./index.html', './src/**/*.tsx'],
   theme: {
     extend: {
@@ -47,6 +49,10 @@ export default {
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--gradient-color-stops))',
+      },
+      boxShadow: {
+        'corner-left': `0 1rem 0 0 ${colors.indigo['100']}`,
+        'corner-right': `0 -1rem 0 0 ${colors.indigo['100']}`,
       },
     },
   },
