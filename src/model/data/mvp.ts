@@ -501,7 +501,7 @@ export const ingredients = [
     },
     tagIds: [],
     possibleUnitIds: [],
-    missing: true,
+    missing: false,
   },
   {
     id: 'rye-whisky',
