@@ -25,10 +25,15 @@ export const populatedCocktails = cocktails
       tags: allTags.filter(tag => cocktail.tagIds.includes(tag.id)),
     };
   })
-  .filter(cocktail => {
+  .map(cocktail => {
     const hasAllIngredients = cocktail.recipe.every(item => item.optional || item.garnish || !item.ingredient.missing);
-    return hasAllIngredients;
+    if (hasAllIngredients) return cocktail;
+    return { ...cocktail, tagIds: ['out-of-stock'] };
   });
+// .filter(cocktail => {
+//   const hasAllIngredients = cocktail.recipe.every(item => item.optional || item.garnish || !item.ingredient.missing);
+//   return hasAllIngredients;
+// });
 
 export const cocktailsGrouped = cocktailTags.reduce(
   (acc, curr) => {

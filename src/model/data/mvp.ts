@@ -66,6 +66,12 @@ export const units = [
     shortName: 'rim',
     amountInMillis: 0,
   },
+  {
+    id: 'dust',
+    shortName: 'dust',
+    name: 'grated',
+    amountInMillis: 0,
+  },
 ] as const satisfies Readonly<Unit[]>;
 
 export type UnitId = (typeof units)[number]['id'];
@@ -90,6 +96,7 @@ export const ingredients = [
     },
     tagIds: [],
     possibleUnitIds: [],
+    missing: true,
   },
   {
     id: 'angostura-bitters',
@@ -112,7 +119,6 @@ export const ingredients = [
     },
     tagIds: [],
     possibleUnitIds: [],
-    missing: true,
   },
   {
     id: 'blue-curacao',
@@ -154,6 +160,17 @@ export const ingredients = [
     description: '',
     image: {
       url: '/img/ingredients/campari.jpg',
+      icon: {},
+    },
+    tagIds: [],
+    possibleUnitIds: [],
+  },
+  {
+    id: 'cinnamon',
+    name: 'Cinnamon',
+    description: '',
+    image: {
+      url: '/img/ingredients/cinnamon.jpg',
       icon: {},
     },
     tagIds: [],
@@ -324,6 +341,7 @@ export const ingredients = [
     },
     tagIds: [],
     possibleUnitIds: [],
+    missing: true,
   },
   {
     id: 'guinness',
@@ -368,6 +386,7 @@ export const ingredients = [
     },
     tagIds: [],
     possibleUnitIds: [],
+    missing: true,
   },
   {
     id: 'lemon-juice',
@@ -434,7 +453,6 @@ export const ingredients = [
     },
     tagIds: [],
     possibleUnitIds: [],
-    missing: true,
   },
   {
     id: 'orange-bitters',
@@ -479,6 +497,7 @@ export const ingredients = [
     },
     tagIds: [],
     possibleUnitIds: [],
+    missing: true,
   },
   {
     id: 'pinapple-juice',
@@ -501,7 +520,7 @@ export const ingredients = [
     },
     tagIds: [],
     possibleUnitIds: [],
-    missing: false,
+    missing: true,
   },
   {
     id: 'rye-whisky',
@@ -594,6 +613,17 @@ export const ingredients = [
     missing: true,
   },
   {
+    id: 'tonka-bean',
+    name: 'Tonka Bean',
+    description: '',
+    image: {
+      url: '/img/ingredients/tonka-bean.jpeg',
+      icon: {},
+    },
+    tagIds: [],
+    possibleUnitIds: [],
+  },
+  {
     id: 'triple-sec',
     name: 'Triple Sec',
     description: '',
@@ -662,6 +692,8 @@ export const ingredients = [
   },
 ] as const satisfies Readonly<MockIngredient[]>;
 
+export const ingredientsLookup = Object.fromEntries(ingredients.map(ingr => [ingr.id, ingr]));
+
 export type IngredientId = (typeof ingredients)[number]['id'];
 
 export const cocktailTags = [
@@ -698,6 +730,11 @@ export const cocktailTags = [
   {
     id: 'other',
     label: 'Other',
+    group: 'base',
+  },
+  {
+    id: 'out-of-stock',
+    label: 'Out of Stock',
     group: 'base',
   },
 ] as const satisfies Readonly<Tag[]>;
@@ -1260,6 +1297,8 @@ export const cocktails: Cocktail[] = [
       { ingredientId: 'elderflower-liqueur', unitId: 'bsp', amount: 1 },
       { ingredientId: 'benedictine', unitId: 'bsp', amount: 2 },
       { ingredientId: 'lemon-juice', unitId: 'bsp', amount: 1 },
+      { ingredientId: 'cinnamon', unitId: 'dust', amount: 1 },
+      { ingredientId: 'tonka-bean', unitId: 'dust', amount: 1 },
     ],
     tagIds: ['rum'],
     image: {

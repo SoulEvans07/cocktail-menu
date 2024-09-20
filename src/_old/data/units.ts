@@ -43,6 +43,12 @@ const unitList: Unit[] = [
     name: 'piece',
     amountInMillis: 0,
   },
+  {
+    id: 'dust',
+    short: 'dust',
+    name: 'grated',
+    amountInMillis: 0,
+  },
 ];
 
 export const units = unitList.reduce((acc, curr) => ({ ...acc, [curr.id]: curr }), {} as Record<string, Unit>);

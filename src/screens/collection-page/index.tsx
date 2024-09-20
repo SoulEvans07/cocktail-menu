@@ -20,7 +20,8 @@ export function CollectionPage(props: CollectionPageProps) {
   const [category, setCategory] = useState<string | 'all'>('all');
   const filteredCocktails = useMemo(() => {
     return populatedCocktails.filter(c => {
-      if (category === 'all') return true;
+      // if (category === 'all') return true;
+      if (category === 'all') return !c.tagIds.includes('out-of-stock');
       return c.tagIds.includes(category);
     });
   }, [populatedCocktails, category]);
@@ -28,7 +29,7 @@ export function CollectionPage(props: CollectionPageProps) {
   return (
     <div className="flex h-screen max-h-screen w-full flex-shrink-0 flex-row overflow-x-hidden bg-indigo-100">
       <CollectionSidebar selected={category} setSelected={setCategory} disabled={!active} />
-      <div className="grid flex-1 flex-shrink-0 auto-rows-min grid-cols-2 gap-2 overflow-x-auto p-2 text-indigo-800 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
+      <div className="grid flex-1 flex-shrink-0 auto-rows-min grid-cols-2 gap-2 overflow-x-auto p-2 text-indigo-800 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 xl:gap-3 xl:p-3">
         {filteredCocktails.map(cocktail => (
           <CocktailItem key={cocktail.id} cocktail={cocktail} />
         ))}

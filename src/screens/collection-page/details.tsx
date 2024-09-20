@@ -5,6 +5,7 @@ import { cn } from '~/utils/cn';
 import { Button } from '~/components/controls/button';
 import { DrawerClose, DrawerHeader, DrawerTitle } from '~/components/layout/drawer';
 import { SheetClose, SheetHeader, SheetTitle } from '~/components/layout/sheet';
+import { ingredientsLookup } from '~/model/data/mvp';
 
 type CocktailDetailsProps = {
   cocktail: PopulatedCocktail;
@@ -46,18 +47,25 @@ export function CocktailDetails(props: CocktailDetailsProps) {
                 backgroundSize: item.ingredient.image?.icon.scale ? `${item.ingredient.image?.icon.scale}%` : 'cover',
               }}
             />
-            <div className="ingredient-name flex flex-col">
+            <div
+              className={cn('ingredient-name flex flex-col', {
+                'text-indigo-400	line-through': item.ingredient.missing,
+              })}
+            >
               <span>{item.ingredient.name}</span>
               <span className="ingredient-modifier text-xs text-indigo-400">
                 {!!item.optional && ' (optional)'}
                 {!!item.garnish && ' (garnish)'}
               </span>
             </div>
-            {!item.garnish && (
+            {!item.garnish && item.unitId !== 'dust' && (
               <>
                 <span className="ingredient-amount ml-auto">{item.amount}</span>
                 <span className="ingredient-unit ml-1 text-indigo-400">{item.unit.shortName}</span>
               </>
+            )}
+            {item.unitId === 'dust' && (
+              <span className="ingredient-unit ml-auto text-indigo-400">{item.unit.name}</span>
             )}
           </div>
         ))}
