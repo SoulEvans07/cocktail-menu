@@ -743,7 +743,7 @@ export const cocktailTags = [
   },
   {
     id: 'out-of-stock',
-    label: 'Missing',
+    label: 'Nope',
     group: 'base',
   },
 ] as const satisfies Readonly<Tag[]>;
