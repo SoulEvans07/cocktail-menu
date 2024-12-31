@@ -96,7 +96,7 @@ export const ingredients = [
     },
     tagIds: [],
     possibleUnitIds: [],
-    missing: true,
+    missing: false,
   },
   {
     id: 'angostura-bitters',
@@ -175,6 +175,7 @@ export const ingredients = [
     },
     tagIds: [],
     possibleUnitIds: [],
+    missing: true,
   },
   {
     id: 'champagne',
@@ -230,6 +231,7 @@ export const ingredients = [
     },
     tagIds: [],
     possibleUnitIds: [],
+    missing: true,
   },
   {
     id: 'cucumber',
@@ -241,6 +243,7 @@ export const ingredients = [
     },
     tagIds: [],
     possibleUnitIds: [],
+    missing: true,
   },
   {
     id: 'dark-rum',
@@ -364,6 +367,7 @@ export const ingredients = [
     },
     tagIds: [],
     possibleUnitIds: [],
+    missing: true,
   },
   {
     id: 'honey-syrup',
@@ -375,6 +379,7 @@ export const ingredients = [
     },
     tagIds: [],
     possibleUnitIds: [],
+    missing: true,
   },
   {
     id: 'kevert',
@@ -453,6 +458,7 @@ export const ingredients = [
     },
     tagIds: [],
     possibleUnitIds: [],
+    missing: true,
   },
   {
     id: 'orange-bitters',
@@ -475,6 +481,7 @@ export const ingredients = [
     },
     tagIds: [],
     possibleUnitIds: [],
+    missing: true,
   },
   {
     id: 'orange-twist',
@@ -622,6 +629,7 @@ export const ingredients = [
     },
     tagIds: [],
     possibleUnitIds: [],
+    missing: true,
   },
   {
     id: 'triple-sec',
@@ -667,6 +675,7 @@ export const ingredients = [
     },
     tagIds: [],
     possibleUnitIds: [],
+    missing: true,
   },
   {
     id: 'whisky',
@@ -734,7 +743,7 @@ export const cocktailTags = [
   },
   {
     id: 'out-of-stock',
-    label: 'Out of Stock',
+    label: 'Missing',
     group: 'base',
   },
 ] as const satisfies Readonly<Tag[]>;
