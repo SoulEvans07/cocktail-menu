@@ -187,6 +187,7 @@ export const ingredients = [
     },
     tagIds: [],
     possibleUnitIds: [],
+    missing: true,
   },
   {
     id: 'coffee',
@@ -367,7 +368,7 @@ export const ingredients = [
     },
     tagIds: [],
     possibleUnitIds: [],
-    missing: true,
+    missing: false,
   },
   {
     id: 'honey-syrup',
@@ -458,7 +459,7 @@ export const ingredients = [
     },
     tagIds: [],
     possibleUnitIds: [],
-    missing: true,
+    missing: false,
   },
   {
     id: 'orange-bitters',
@@ -493,6 +494,7 @@ export const ingredients = [
     },
     tagIds: [],
     possibleUnitIds: [],
+    missing: true,
   },
   {
     id: 'orgeat',
@@ -504,7 +506,7 @@ export const ingredients = [
     },
     tagIds: [],
     possibleUnitIds: [],
-    missing: true,
+    missing: false,
   },
   {
     id: 'pinapple-juice',
